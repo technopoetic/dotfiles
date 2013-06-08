@@ -4,6 +4,11 @@ execute pathogen#infect()
 "Turn on syntax highlighting
 syntax on
 
+set t_Co=256 
+if !has("gui_running") 
+    set background=dark 
+endif
+
 "Not sure.  I think it allows plugins access to the filetype
 filetype plugin indent on
 
@@ -84,6 +89,9 @@ let mapleader = ","
 "Toggle the TagBar
 nnoremap <silent> <F9> :TagbarToggle<CR>
 
+"Toggle the TagList
+nnoremap <silent> <F8> :TlistToggle<CR>
+
 "Enable 'very magic' which makes Vim regex more like python/perl.
 nnoremap / /\v
 vnoremap / /\v
@@ -124,9 +132,31 @@ nnoremap k gk
 "run a command.
 nnoremap ; :
 
+"map NerdTreeToggle
+nmap <silent> <c-n> :NERDTreeToggle<CR>
+
 "remap jj to <ESC> for quicker escaping.  There are no English words that have
 "the characters 'jj'
 inoremap jj <ESC>
 
+noremap fc <Esc>:call CleanClose(1)
+noremap fq <Esc>:call CleanClose(0)
 
+function! CleanClose(tosave)
+    if (a:tosave == 1)
+            w!
+        endif
+        let todelbufNr = bufnr("%")
+        let newbufNr = bufnr("#")
+        if ((newbufNr != -1) && (newbufNr != todelbufNr) && buflisted(newbufNr))
+                exe "b".newbufNr
+            else
+                    bnext
+                endif
 
+                if (bufnr("%") == todelbufNr)
+                        new
+                    endif
+                    exe "bd".todelbufNr
+                endfunction
+let g:netrw_liststyle=3

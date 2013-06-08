@@ -118,3 +118,6 @@ PATH=/home/rhibbitts/bin:$PATH
 MANPATH=/home/rhibbitts/man:$MANPATH
 
 export PATH MANPATH
+
+#Set VI mode
+set -o vi
