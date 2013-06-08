@@ -5,7 +5,9 @@ execute pathogen#infect()
 syntax on
 
 set t_Co=256 
-set background=dark
+if !has("gui_running") 
+    set background=dark 
+endif
 
 "Not sure.  I think it allows plugins access to the filetype
 filetype plugin indent on
@@ -85,9 +87,8 @@ set directory^=$HOME/tmp//
 "Map the Leader to ',' instead of '/'.  Easier to get to.
 let mapleader = ","
 
-"Toggle the TagBar
-"nnoremap <silent> <F9> :TagbarToggle<CR>
-"No TagBar in this vi.  Don't have exuberant ctags.
+"Toggle the TagList
+nnoremap <silent> <F8> :TlistToggle<CR>
 
 "Enable 'very magic' which makes Vim regex more like python/perl.
 nnoremap / /\v
@@ -156,3 +157,4 @@ function! CleanClose(tosave)
                     endif
                     exe "bd".todelbufNr
                 endfunction
+let g:netrw_liststyle=3

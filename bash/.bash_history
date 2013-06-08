@@ -1,584 +1,3 @@
-sudo apt-get install google-chrome
-sudo apt-get install chrome
-sudo apt-get install google-chrome-stable
-sudo add-apt-repository ppa:webupd8team/sublime-text-2
-sudo apt-get update
-sublime
-sudo apt-get install sublime-text-2
-sudo apt-get install sublime-text
-sublime
-sudo apt-get purge sublime-text
-cd Downloads/
-ls
-tar -xf Sublime\ Text\ 2.0.1\ x64.tar.bz2 
-ls
-sudo mv Sublime\ Text\ 2 /opt/
-sudo ln -s /opt/Sublime\ Text\ 2/sublime_text /usr/bin/sublime
-sublime
-ls
-cd Komodo-Edit-7.1.3-11027-linux-x86_64/
-ls
-./install.sh 
-kate ~/.bashrc
-komodo
-komodo-edit
-$PATH
-echo $PATH
-komodo
-kate ~/.bashrc
-komodo
-kate ~/.bashrc
-ln -s "/home/rhibbitts/Komodo-Edit-7/bin/komodo" /usr/local/bin/komodo
-sudo ln -s "/home/rhibbitts/Komodo-Edit-7/bin/komodo" /usr/local/bin/komodo
-komodo
-which chrome
-which goole-chrome
-google-chrome
-svn
-sudo apt-get install subversion
-ping www.autoremarketing.com
-sudo apt-get install pidgin
-.dropbox-dist/dropboxd &
-sudo apt-get install pidgin
-ping rutl014d.nandomedia.com
-ping rhibbitts-app.nandomedia.com
-ping rhibbitts-app
-ping rhibbitts-app.nandomedia.com
-ping rhibbitts-app.vnet087.nandomedia.com
-ping apps.nandomedia.com
-rhibbitts-app.apps.nandomedia.com
-ping rhibbitts-app.apps.nandomedia.com
-ping rhibbitts-red-site.apps.nandomedia.com
-ping rhibbitts-app.apps.devel.nandomedia.com
-ssh
-ssh rhibbitts@ rhibbitts-app.apps.devel.nandomedia.com
-ssh rhibbitts@rhibbitts-app.apps.devel.nandomedia.com
-ssh rhibbitts@rutl014d.nandomedia.com
-ssh rhibbitts@rutl009d.nandomedia.com
-ssh-keygen
-ls
-ls -a
-cd .ss
-cd .ssh/
-ls
-rm id_rsa
-rm id_rsa.pub 
-cd
-ssh-keygen
-ls
-cd .ssh/
-ls
-ssh-copy-id -i ~/.ssh/id_rsa_laptop.pub rhibbitts@rutl014d.nandomedia.com
-ssh rhibbitts@rutl014d.nandomedia.com
-cd
-ssh rhibbitts@rutl014d.nandomedia.com
-ssh-copy-id -i ~/.ssh/id_rsa_laptop.pub rhibbitts@rutl014d.nandomedia.com
-ssh rhibbitts@rutl014d.nandomedia.com
-ssh -v rutl014d
-ssh rutl014d
-exit
-ssh rhibbitts@rusr001d.nandomedia.com
-ssh rhibbitts@rusr002d.nandomedia.com
-ssh rhibbitts@rusr003d.nandomedia.com
-ssh rhibbitts@rusr007d.nandomedia.com
-ssh rhibbitts@rutl014d.nandomedia.com
-ssh rhibbitts@rusr007d.nandomedia.com
-ssh rhibbitts@rutl014d.nandomedia.com
-ssh rhibbitts@rutl009d.nandomedia.com
-ssh rhibbitts@rutl014d.nandomedia.com
-cd .ssh/
-ls
-ssh rutl014d
-cat id_rsa_laptop.pub 
-ssh rutl014d
-cd .ssh/
-ls
-nano config 
-ssh rutl014d
-cd Downloads/
-ls
-cd anyconnect-3.1.00495/
-ks
-ls
-cd vpn/
-ls
-sudo ./vpn_install.sh
-cd /opt/cisco/anyconnect/profile/
-ls
-cp ~/Downloads/situs_remote.xml .
-sudo cp ~/Downloads/situs_remote.xml .
-ls
-cd /opt/cisco/
-ls
-cd anyconnect/
-ls
-cd bin/
-ls
-vpn
-./vpn
-ls
-cd vp
-cd vpn
-ls
-vpnagentd
-./vpnagentd
-cd ..
-ls
-cd bin/
-ls
-sudo ./anyconnect_uninstall.sh 
-cd
-cd Downloads/anyconnect-3.1.00495/
-ls
-cd vpn/
-ls
-sudo root ./vpninstall.sh
-su
-su root
-sudo ./vpninstall.sh
-sudo ./vpn_install.sh 
-ls /opt/cisco/anyconnect/bin/
-ls
-cd /opt/cisco/anyconnect/
-ls
-cd profile/
-ls
-anyconnect
-cisco
-cisco-anyconnect
-sudo cisco-anyconnect
-ssh ssh-devel.mcclatchyinteractive.com
-perl
-perl -version
-perl -V
-ssh rutl014d
-sudo apt-get install ia32-libs
-sudo apt-get install lib32nss-mdns
-histoyr
-history
-cat .ssh/config 
-ssh rutl014d
-ssh rutl001d
-ssh rutl014d
-exit
-ssh rutl014d
-ssh rutl014d
-ssh
-ssh rutl014d
-curl --verbose --head --location rhibbitts-red-site.apps.nandomedia.com
-sudo apt-get install curl
-curl --verbose --head --location rhibbitts-red-site.apps.nandomedia.com
-ssh rutl014d
-ls
-mkdir solr
-cd solr/
-svn -co http://svn.apache.org/repos/asf/lucene/dev/branches/lucene_solr_3-2/ 3.2
-svn -co http://svn.apache.org/repos/asf/lucene/dev/branches/lucene_solr_3-2 3.2
-svn -co http://svn.apache.org/repos/asf/lucene/dev/branches/lucene_solr_3_2 3.2
-svn co http://svn.apache.org/repos/asf/lucene/dev/branches/lucene_solr_3_2 3.2
-cd
-sublime .bashrc
-exit
-d
-ssh rutl014d
-exit
-ssh rutl014d
-ll
-curl --verbose --head --location rhibbitts-red-preview.apps.nandomedia.com
-curl --verbose --head --location rhibbitts-red-preview.apps.devel.nandomedia.com:8141
-ssh rutl014d
-history
-curl --verbose --head --location rhibbitts-red-site.apps.nandomedia.com
-curl --verbose --head --location rhibbitts-red-preview.apps.devel.nandomedia.com:8141
-curl --verbose --head --location rhibbitts-red-preview.apps.nandomedia.com
-sudo apt-get install wireshark
-curl --verbose --head --location rhibbitts-red-preview.apps.nandomedia.com
-ssh rweb000d.nandomedia.com
-ssh rweb000d
-ssh rweb000d.nandomedia.com
-ssh rutl001d
-ssh rutl001d.nandomedia.com
-ssh rutl014d
-ping rhibbitts-red-media.apps.nandomedia.com
-sudo apt-get install gimp
-ssh rutl014d
-s
-ssh rutl014d
-exit
-jconsole
-ssh rutl014d
-man perldocs
-man perldoc
-perldoc 
-perldoc perldoc
-perldoc perltoc
-perldoc perlintro
-perldoc perltoc
-perldoc perlvar
-perldoc perltoc
-perldoc DBI
-perldoc DBI::
-perldoc 
-perldoc perltoc
-sudo apt-get install squirrel-sql
-scp /home/rhibbitts/Pictures/rhibbitts_red.png rhibbitts@rutl014d.nandomedia.com:/nm/home/staff/rhibbitts/codebase/jumuishi/public/images/logo/
-scp /home/rhibbitts/Pictures/rhibbitts_red_footer.png rhibbitts@rutl014d.nandomedia.com:/nm/home/staff/rhibbitts/codebase/jumuishi/public/images/logo/
-.dropboxd
-.dropbox
-ls -al
-./.dropbox
-cd .dropbox
-ls
-cd ..
-dropboxd
-dropbox-dist
-cd /opt/
-ls
-dropbox
-cd
-~/.dropbox-dist/dropboxd
-cd Dropbox/tuts/perl/Misc/
-ls
-perl my_our.pl
-cd ..
-ls
-cd Moose/
-ls
-perl person.pm 
-cpanm
-sudo apt-get install cpanminus
-cpanm
-cpanm Moose
-cpanm --sudo Moose
-perl person.pm 
-cpanm --sudo --prompt Moose
-ssh rutl014d
-ls
-cd
-sudo cpanm Moose
-cat /home/rhibbitts/.cpanm/build.log 
-which gcc
-gcc
-sudo apt-get install gcc
-file /sbin/init
-sudo cpanm Moose
-cd Dropbox/tuts/perl/Moose/
-ls
-perl person.pm 
-lynx
-ssh rutl014d
-ssh rslr008d.nandomedia.com
-which ruby
-ruby -version
-ruby -vers
-ruby -ver
-ruby -v
-type ruby | head -l
-type ruby | head -1
-ssh rutl014d
-sudo apt-get install rvm
-\curl -L https://get.rvm.io | bash -s stable --rails
-type rvm | head -n 1
-source ~/.rvm/scripts/rvm
-type rvm | head -n 1
-source ~/.rvm/scripts/rvm
-type rvm | head -n 1
-exit
-type rvm | head -n 1
-sudo apt-get uninstall rvm
-sudo apt-get remove rvm
-cd
-ll
-rm -r .rvm/
-ll
-rvm
-sudo apt-get install ruby-rvm
-\curl -L https://get.rvm.io | bash -s stable --rails
-source /home/rhibbitts/.rvm/scripts/rvm
-rm -r .rvm/
-type rvm | head -n 1
-\curl -L https://get.rvm.io | bash -s stable
-type rvm | head -n 1
-exit
-type rvm | head -n 1
-nano .bashrc
-source /home/rhibbitts/.rvm/scripts/rvm
-type rvm | head -n 1
-rvm list known
-type rvm | head -n 1
-rvm list known
-which ruby
-rvm install 1.9.2
-rvm use 1.9.2
-rvm use 1.9.2
-ll
-ls
-rvm use 1.9.2
-echo $-
-rvm use 1.9.2
-echo $PATH
-which ruby
-ruby -v
-rvm use 1.9.2
-type rvm | head -n 1
-perldoc File::Basename
-ssh rutl014d
-grep --help
-pwd
-mkdir automation
-cd automation/
-mkdir ui_tests_mi
-cd ui_tests_mi/
-svn co svn+ssh://srcctl.devel.nandomedia.com/nm/devel/subversion/qa/ui_tests_mi/trunk
-cd
-cd .ssh/
-ls
-cd --
-pwd
-cd automation/tru
-cd automation/ui_tests_mi/trunk/
-rvm install ruby-1.9.3-p194
-rvm install 1.9.3-p194
-which gcc
-gcc -v
-apt-get
-apt-get install automake
-sudo apt-get install automake
-rvm install 1.9.3-p194
-cd ..
-cd trunk/
-bundle install
-gem install bundler
-sudo apt-get install zlib1g-dev
-rvm reinstall 1.9.3
-grep --help
-pwd
-mkdir automation
-cd automation/
-mkdir ui_tests_mi
-cd ui_tests_mi/
-svn co svn+ssh://srcctl.devel.nandomedia.com/nm/devel/subversion/qa/ui_tests_mi/trunk
-cd
-cd .ssh/
-ls
-cd --
-pwd
-cd automation/tru
-cd automation/ui_tests_mi/trunk/
-rvm install ruby-1.9.3-p194
-rvm install 1.9.3-p194
-which gcc
-gcc -v
-apt-get
-apt-get install automake
-sudo apt-get install automake
-rvm install 1.9.3-p194
-cd ..
-cd trunk/
-bundle install
-gem install bundler
-sudo apt-get install zlib1g-dev
-rvm reinstall 1.9.3
-grep --help
-pwd
-mkdir automation
-cd automation/
-mkdir ui_tests_mi
-cd ui_tests_mi/
-svn co svn+ssh://srcctl.devel.nandomedia.com/nm/devel/subversion/qa/ui_tests_mi/trunk
-cd
-cd .ssh/
-ls
-cd --
-pwd
-cd automation/tru
-cd automation/ui_tests_mi/trunk/
-rvm install ruby-1.9.3-p194
-rvm install 1.9.3-p194
-which gcc
-gcc -v
-apt-get
-apt-get install automake
-sudo apt-get install automake
-rvm install 1.9.3-p194
-cd ..
-cd trunk/
-bundle install
-gem install bundler
-sudo apt-get install zlib1g-dev
-rvm reinstall 1.9.3
-ssh rslr008d.nandomedia.com
-ssh rutl001d
-ssh rutl001d.nandomedia.com
-ssh rslr008d.nandomedia.com
-grep --help
-pwd
-mkdir automation
-cd automation/
-mkdir ui_tests_mi
-cd ui_tests_mi/
-svn co svn+ssh://srcctl.devel.nandomedia.com/nm/devel/subversion/qa/ui_tests_mi/trunk
-cd
-cd .ssh/
-ls
-cd --
-pwd
-cd automation/tru
-cd automation/ui_tests_mi/trunk/
-rvm install ruby-1.9.3-p194
-rvm install 1.9.3-p194
-which gcc
-gcc -v
-apt-get
-apt-get install automake
-sudo apt-get install automake
-rvm install 1.9.3-p194
-cd ..
-cd trunk/
-bundle install
-gem install bundler
-sudo apt-get install zlib1g-dev
-rvm reinstall 1.9.3
-rvm reinstall 1.9.3-p194
-cd ..
-cd trunk/
-bundle install
-sudo apt-get install libxml2-dev
-bundle install
-sudo apt-get install libxslt-dev
-bundle install
-rake TAGS=@smoke_test
-apt-get install libopenssl-ruby
-sudo apt-get install libopenssl-ruby
-rake TAGS=@smoke_test
-sudo apt-get install libopenssl-ruby
-rake TAGS=@smoke_test
-sudo apt-get install libssl-dev
-rake TAGS=@smoke_test
-sudo sudo apt-get install libopenssl-ruby1.9.3
-rvm package install openssl
-rvm pkg install openssl
-rvm reinstall all --force
-rake TAGS=@smoke_test
-cd
-ls
-cd automation/
-ls
-cd ui_tests_mi/
-ls
-cd trunk/
-cd
-ssh rutl014d
-cd Downloads/
-ls
-ll
-scp rhibbitts@rslr008d.nandomedia.com:/nm/local/solr/webapps/solar.war
-ls
-scp rhibbitts@rslr008d.nandomedia.com:/nm/local/solr/webapps/solr.war
-scp rhibbitts@rslr008d.nandomedia.com:/nm/local/solr/webapps/solr.war /home/rhibbitts/Downloads/
-java -version
-file /sbin/init
-sudo mkdir -p /usr/local/java
-ll
-sudo -s cp -r jdk-7u10-linux-x64.tar.gz /usr/local/java
-sudo -s chmod a+x jdk-7u10-linux-x64.tar.gz
-sudo -s tar xvzf jdk-7u10-linux-x64.tar.gz
-ls
-cd /usr/local/java/
-ls
-sudo -s tar xvzf jdk-7u10-linux-x64.tar.gz
-cd ~/Downloads/
-sudo -s cp -r jre-7u10-linux-x64.tar.gz /usr/local/java
-sudo -s chmod a+x /usr/local/java/jre-7u10-linux-x64.tar.gz
-cd /usr/local/java/
-ll
-sudo -s tar xvzf jre-7u10-linux-x64.tar.gz
-sudo nano /etc/profile
-sudo update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jre1.7.0_10/bin/java" 1
-sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/jdk1.7.0_10/bin/javac" 1
-sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/local/java/jre1.7.0_10/bin/javaws" 1
-sudo update-alternatives --set java /usr/local/java/jre1.7.0_10/bin/java
-sudo update-alternatives --set javac /usr/local/java/jdk1.7.0_10/bin/javac
-sudo update-alternatives --set javaws /usr/local/java/jre1.7.0_10/bin/javaws
-. /etc/profile
-java -version
-ssh rutl014d
-ssh rsolr008d.nandomedia.com
-ssh rsolr008d.nandomedia.com:8983
-ssh rutl014d
-xit
-exit
-ssh rutl014d
-s
-ssh rsolr006p.nandomedia.com
-ssh rutl014d
-man du
-/usr/bin/time
-/usr/bin/time --help
-man time
-man trap
-man set
-man noclobber
-set -o noclobber
-set +o noclobber
-which curl
-curl http://rslr008d.nandomedia.com:8983/solr/rhibbitts/update?optimize=true
-nano ~/.bash_profile 
-nano ~/.bashrc
-. ~/.bashrc
-echo $MANPATH
-man awk
-man siege
-. ~/.bashrc
-siege
-siege.config 
-siege -C
-siege
-history
-ssh rslr008d.nandomedia.com
-man tail
-http://rslr008d.nandomedia.com:8983/solr/rhibbitts/replication?command=details
-curl http://rslr008d.nandomedia.com:8983/solr/rhibbitts/replication?command=details
-curl http://rslr008d.nandomedia.com:8983/solr/rhibbitts/update?optimize=true
-cd Downloads/
-ls
-cd siege-2.72/
-ls
-./configure 
-make
-make install
-sudo make install
-man siege
-cd
-ll
-siege
-siege -C
-cd Downloads/
-ls
-cd siege-2.72/
-sudo make uninstall
-siege
-./configure --prefix=/home/rhibbitts/
-make
-sudo make install
-siege
-ssh rslr008d
-ssh rslr008d.nandomedia.com
-cd Downloads/
-ls
-cd siege-2.72/
-ls
-./install-sh 
-nano INSTALL 
-exit
-history
-ssh rslr000t.nandomedia.com
-python
-ssh rslr006p.nandomedia.com
-ssh rweb024p.nandomedia.com
-history | grep -i "scp"
-scp rhibbitts@rweb024p.nandomedia.com:nm/home/mics/mics006f/cb_feed.xml /home/rhibbitts/Downloads/
-scp rhibbitts@rweb024p.nandomedia.com:/nm/home/mics/mics006f/cb_feed.xml /home/rhibbitts/Downloads/
 scp /home/rhibbitts/Downloads/cb_feed.xml rhibbitts@rutl014d.nandomedia.com:/nm/home/staff/rhibbitts/cb_feed/
 cd Downloads/
 ls
@@ -899,3 +318,1683 @@ mkdir tmp
 ls
 ll
 exit
+cd Downloads/
+ls
+java -jar solrmeter-0.3.0.jar 
+ls
+cd solr/
+ls -lct
+ls -lat
+cd 2013-04-09-1055/
+ls
+ls -lat
+vim req_extract 
+cd
+cd dotfiles/
+git remotes -v
+git remote -v
+git fetch origin
+git status
+git add
+git add vim/.vim/*
+git status
+git merge origin/master
+vim
+cd vim/.vim/bundle/
+ls
+cd ctrlp/
+ls
+ls -al
+cd ..
+git fetch origin/master
+git fetch origin
+git merge origin/master
+git status
+git add
+git add .
+git status
+git merge origin/master
+git commit vim/.vimrc -m "I don't know"
+git merge origin/master
+git status
+git commit -m "Still don't know"
+git merge origin/master
+vim
+cd vim/.vim/
+ls
+cd bundle/
+ls
+cd ctrlp/
+ls
+cd ..
+git status
+git fetch
+git status
+cd ..
+rm -rf dotfiles/
+git clone https://github.com/technopoetic/dotfiles.git dotfiles
+ls
+ll
+vim
+ls -al
+rm -rf dotfiles
+git clone https://github.com/technopoetic/dotfiles.git dotfiles
+vim
+ls
+vim id_rsa_laptop.pub 
+ls
+cd features/
+ls
+cd automated/
+ls
+cd aurora/detail_pages/
+ls
+cd story_detail/
+ls
+vim story_with_headshot.feature 
+cd 
+cd code/
+cd mi_automation/
+ls -al
+vim .rvmrc 
+rvm install ruby-1.9.3-p374
+cd
+cd code/mi_automation/
+ls
+cd features/
+ls
+cd automated/
+ls
+cd aurora/
+ls
+cd detail_pages/
+ls
+cd story_detail/
+ls
+grep '@' .
+grep '@' *.feature
+cd ..
+cd
+cd code/mi_automation/
+rake ENVIRONMENT=qasite1 TAGS=@story_detail
+rvm list default
+rake ENVIRONMENT=qasite4 TAGS=@smoke_test
+ls
+cd ..
+ls
+cd mi_automation/
+ls
+bundle update
+rake ENVIRONMENT=qasite4 TAGS=@smoke_test
+rake ENVIRONMENT=qasite1 TAGS=@story_detail
+grep -r 'Verify the Headshot Highlight media version' .
+grep -r 'Verify the Headshot Highlight media version' . | grep -v svn
+cd features/automated/aurora/detail_pages/story_detail/story_with_headshot.feature
+cd features/automated/aurora/detail_pages/story_detail/
+ls
+vim story_with_headshot.feature 
+cd
+cd code/
+cd mi_automation/
+rake ENVIRONMENT=qasite1 TAGS=@story_detail
+rake ENVIRONMENT=qasite1 TAGS=@auto_crop
+ls
+cd features/
+ls
+cd automated/
+ls
+cd aurora/
+ls
+cd detail_pages/
+ls
+cd gallery_detail/
+ls
+cd ..
+ls
+cd gallery_detail/
+ls
+vim gallery_images.feature 
+cd
+cd code/mi_automation/
+rake ENVIRONMENT=qasite1 TAGS=@gallery_detail
+rake ENVIRONMENT=qasite4 TAGS=@gallery_detail
+ls
+cd features/
+ls
+cd automated/
+ls
+cd aurora/
+ls
+cd detail_pages/gallery_detail/
+ls
+vim gallery_images.feature 
+cd
+cd code/mi_automation/
+svn up
+rake ENVIRONMENT=qasite1 TAGS=@auto_crop
+sudo apt-get remove perlbrew
+vim 
+la
+ll
+cd perl5/
+ls
+ll
+cd bin/
+ls
+cd ..
+ls
+cd lib/
+ls
+cd perl5/
+ls
+cd ..
+cd
+cd code/
+ls
+cd mi_automation/
+ls
+svn up
+svn info
+cd
+cd ..
+cd 
+cd .ssh/
+ls
+ssh-copy-id -i id_rsa_laptop.pub rhibbitts@srcctl.devel.nandomedia.com
+ssh srcctl.devel.nandomedia.com
+python
+vim
+cd
+cd code/
+mkdir python_hard_way
+cd python_hard_way/
+python ex1.py 
+mv ~/fibonacci.py .
+ls
+python fibonacci.py 
+python
+cd code/
+ls
+cd mi_automation/
+svn up
+ls
+cd datafiles/
+ls
+ll
+cd ..
+ls
+cd features/
+ls
+cd automated/
+ls
+cd sitemgr/
+ls
+cd products/pubsys/nui/
+ls
+vim section_manager.feature 
+tmux attach
+vim section_manager.feature 
+cd
+cd code/mi_automation/
+grep -r 'I create a section through the API' .
+grep -r 'through the API' .
+grep -r 'I log into the Site Manager' .
+grep -r 'I log into the Site Manager' ./*.rb
+grep -r 'I log into the Site Manager' *.rb
+grep -r 'I log into the ' *.rb
+grep -r 'I log into' *.rb
+grep -r 'I log into' ./*.rb
+grep -r 'through the API' *.rb
+grep -r 'through the API' .
+grep -r 'through the API' *.rb
+man grep
+grep -r 'I create a section through the API' .
+grep -r 'I create a section through the API' . | grep -v .svn
+grep -r 'I create a section through the API' . | grep -v svn
+grep -r 'I create a section through the API' . | grep --color -v svn
+ssh rutl014d
+ls
+cd etc/
+ls
+cd ..
+ls
+cd work/
+ls
+cd ..
+ls
+cd solr/
+ls
+cd data/
+ls
+cd ..
+ls
+cd conf/
+ls
+man scp
+cd ..
+ls
+cd ..
+ls
+java -jar start.jar 
+java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.6.2/example/solr/ start.jar 
+java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.6.2/example/solr start.jar 
+java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.6.2/example/solr/ start.jar 
+java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.6.2/example/multicore start.jar 
+java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.6.2/example/solr start.jar 
+cd ..
+cd apache-solr-3.4.0/
+ls
+cd example/
+ls
+java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.4.0/example/solr start.jar 
+ls
+cd
+cd code/apache-solr-3.4.0/
+ls
+cd example/
+ls
+java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.4.0/example/solr start.jar 
+which siege
+cd
+which siege
+siege
+pwd
+exit
+cd
+cd code/
+ls
+cd solrstrap/
+cd ..
+ls
+mkdir solr_construct
+ls
+cd solr_construct/
+mkdir QA
+cd QA/
+scp -rp rhibbitts@rslr001t:/nm/local/var/solr/cores/newsroom/data/index/ .
+scp -rp rhibbitts@rslr001t.nandomedia.com:/nm/local/var/solr/cores/newsroom/data/index/ .
+scp rhibbitts@rslr001t.nandomedia.com:/nm/local/var/solr/cores/newsroom/data/index/index.tar.gz .
+scp rhibbitts@rslr008d.nandomedia.com:/nm/local/var/solr/cores/newsroom/data/index/index.tar.gz ../rhibbitts/
+scp rhibbitts@rslr008d.nandomedia.com:/nm/local/var/solr/cores/rhibbitts/data/index/index.tar.gz ../rhibbitts/
+scp rhibbitts@rslr008d.nandomedia.com:/nm/local/var/solr/cores/rhibbitts/conf/*.xml ../rhibbitts/conf/
+cd ..
+ls
+cd rhibbitts/
+ls
+mkdir logs_from_dev
+cd logs_from_dev/
+scp rhibbitts@rslr008d.nandomedia.com:/nm/local/var/solr/logs/*.log .
+cd ../../QA/
+ls
+mkdir logs_from_dev
+cd logs_from_dev/
+scp rhibbitts@rslr001t.nandomedia.com:/nm/local/var/solr/logs/*.log .
+cd
+ssh rslr008d
+exit
+cd Downloads/
+ls
+mv apache-solr-3.4.0.tgz ~/code/
+cd ../code/
+ls
+gunzip -q apache-solr-3.4.0.tgz 
+ls
+ll
+rm apache-solr-3.4.0.tar 
+tar
+tar --help
+ll
+cd ~/Downloads/
+ls
+ll
+cp apache-solr-3.6.2.tgz ~/code/
+cd
+cd code/
+ls
+ll
+tar -xzvf apache-solr-3.6.2.tgz 
+ls
+cd apache-solr-3.6.2/
+ls
+cd example/
+ls
+ll
+java -jar start.jar 
+ls
+ll
+cd work/
+ls
+cd ..
+cd solr/
+ls
+vim README.txt 
+ls
+cd conf/
+ls
+mv solrconfig.xml stock_solrconfig.xml
+cp ~/code/solr_construct/rhibbitts/conf/solrconfig.xml .
+ls
+vim solrconfig.xml 
+mv schema.xml stock_schema.xml
+cp ~/code/solr_construct/rhibbitts/conf/schema.xml .
+cd ..
+ls
+vim solr.xml 
+cd ..
+ls
+java -jar start.jar 
+ls
+cd solr/
+ls
+cd data/
+ls
+cd index/
+ls
+cd ..
+ls
+cd conf/
+ls
+vim solrconfig.xml 
+exit
+cd code/apache-solr-stock/
+ls
+cd apache-solr-3.4.0/
+ls
+cd example/
+ls
+java -jar start.jar 
+cd ..
+cd ~/code/
+ls
+cd apache-solr-3.4.0/
+ls
+cd example/
+ls
+java -jar start.jar 
+history | grep 'solr'
+java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.4.0/example/solr start.jar
+svn up
+svn status
+ssh rutl014d
+scp rhibbitts@rutl014d:/nm/home/staff/rhibbitts/tmux.conf ~
+ssh rutl014d
+scp rhibbitts@rutl014d:/nm/home/staff/rhibbitts/tmux.conf ~
+man scp
+scp rhibbitts@rutl014d:/nm/home/staff/rhibbitts/tmux.conf /home/rhibbitts/
+exit
+cd
+ls
+ll
+scp rhibbitts@rutl014d.nandomedia.com:/nm/home/staff/rhibbitts/tmux.conf .
+history | grep 'scp'
+ssh rutl014d
+scp rhibbitts@rutl014d.nandomedia.com:/nm/home/staff/rhibbitts/.tmux.conf .
+exit
+ls
+cd features/
+cd output/
+ls
+exit
+svn status
+exit
+vim
+;q
+vim
+exit
+cd
+cd dotfiles/vim/
+ls
+ls -al
+cd .vim/
+ls
+cd bundle/
+ls
+git clone git://github.com/majutsushi/tagbar
+ls
+ctags
+sudo apt-get install exuberant-ctags 
+ls
+rm -rf tagbar/
+ls
+cd ~/Downloads/
+ls
+cp taglist_46.zip ~/dotfiles/vim/.vim/bundle/
+ls
+cd ~/dotfiles/vim/.vim/bundle/
+ls
+unzip taglist_46.zip taglist
+unzip taglist taglist_46.zip
+unzip taglist_46.zip
+ls
+ls -al
+mkdir taglist
+mv plugin/ taglist
+mv doc/ taglist
+ls
+rm taglist_46.zip 
+cd
+cd code/mi_automation/
+svn up
+grep -r 'AUTO-182' features/
+grep -r 'AUTO-182' .
+grep -r 'AUTO-183' .
+grep -r 'AUTO-183' . | grep -v svn
+grep -r 'AUTO-195' . | grep -v svn
+grep --color 'existing section' . | grep -v svn
+grep -r --color 'existing section' . | grep -v svn
+grep -r 'existing section' . | grep -v --color  svn
+exit
+cd
+cd dotfiles/vim/.vim/
+ls
+cd bundle/
+ls
+http://github.com/tomtom/tcomment_vim
+git clone http://github.com/tomtom/tcomment_vim
+ls
+cd
+cd code/mi_automation/
+grep -r --color 'I select' .
+ls
+cd features/
+ls
+cd automated/
+ls
+cd step_definitions/
+ls
+grep -r --color 'I select' .
+grep -r --color 'I select .+ dropdown' .
+grep -r --color 'I select*layout' .
+grep -r --color 'layout' .
+grep -r --color '"Layout" dropdown' .
+grep -r --color 'dropdown' .
+cd
+cd code/mi_automation/
+svn status
+svn revert 
+svn revert features/automated/aurora/detail_pages/gallery_detail/gallery_images.feature 
+svn revert features/automated/sitemgr/products/pubsys/nui/section_manager.feature 
+svn status
+grep -r 'class' .
+exit
+cd code/mi_automation/
+svn up
+svn info
+svn status
+svn revert
+svn diff features/output
+svn resolve --accept working
+screen
+tmux
+sudo apt-get install tmux
+tmux
+ssh rutl014d
+svn status
+ssh rutl014d
+svn status
+svn resolve --accept working features/output/
+svn status
+svn revert
+svn revert features/output/
+svn status
+svn up
+tmux
+exit
+cd 
+cd Downloads/
+ls
+cd lplinux/
+ls
+./install_lastpass.sh 
+cd
+cd Downloads/
+ls
+ll
+cd lplinux/
+ls
+./install_lastpass.sh 
+sudo ./install_lastpass.sh 
+ls
+cd
+ll
+vim six.py 
+rm six.py 
+vim
+exit
+history | grep 'rake'
+rake TAGS=@AUTO-193
+bundle install
+bundle show redcarpet
+
+rake TAGS=@AUTO-193
+grep -r 'display' .
+grep -r 'display' *.rb
+grep -r 'value' *.rb
+grep -r 'value' ./*.rb
+grep -r --include *.rb 'value' .
+grep -r --include=*.rb .
+grep -r --include=*.rb 'value' .
+exit
+cd
+cd Downloads/
+ls
+cd lplinux/
+ls
+./uninstall_lastpass.sh 
+cd code/
+ls
+cd mi_automation/
+history | grep 'rake'
+tmux
+ssh rutl014d
+vim
+;q
+vim
+;q
+exit
+rails g cucumber:install --help
+cd
+cd code/mi_automation/
+rails g cucumber:install --help
+cucumber:install --help
+ll
+cd
+cd .rvm/
+ls
+cd gems
+ls
+cd
+cd code/mi_automation/
+grep -r --include=*.rb 'verify_true' .
+grep -r --include=*.rb 'attribute_value' .
+rake TAGS=@AUTO-193
+exit
+ssh rutl014d
+sudo apt-get install fbreader
+vim
+cd code/
+mkdir pragprog
+cd pragprog/
+mkdir practical_vim
+cd practical_vim/
+mv ~/Downloads/dnvim-code.tgz .
+ls
+tar -zxvf dnvim-code.tgz 
+ls
+cd code/
+ls
+mv ./* ..
+ls
+cd ..
+ls
+rm code/
+rm -r code/
+ls
+cd the_vim_way/
+ls
+vim 0_mechanics.txt 
+ssh rutl014d
+;E
+vim
+cd code/
+ls
+cd mi_automation/
+svn up
+ls
+cd features/
+ls
+cd manual/
+ls
+cd bdp/
+ls
+cd pubsys/
+ls
+cd ..
+ls
+cd content_sharing/
+ls
+cd ..
+ls
+cd pubsys/
+ls
+cd story/
+ls
+ls -al
+vim .
+svn log -r {2013-05-10}:{2013-05-14}
+svn log -r {2013-05-06}:{2013-05-14}
+cd
+cd code/mi_automation/
+svn up
+ls
+cd features/
+ls
+cd manual/
+ls
+cd bdp/
+ls
+cd pubsys/
+ls
+media/
+ls
+cd media/
+ls
+vim image_high_ascii.feature 
+crucible_upload --name "Feature files for MIDEV-10694" --reviewer dodom --file image_high_ascii.feature --file add_image.feature 
+cd
+cd code/mi_automation/
+ls
+crucible_upload --name "Feature files for MIDEV-10694" --reviewer dodom --file features/manual/bdp/pubsys/media/image_high_ascii.feature --file features/manual/bdp/pubsys/media/add_image.feature 
+ssh rutl014d
+which java
+java -version
+ssh rutl014d
+cd code/
+cd mi_automation/
+svn up
+svn status
+svn ci -m "Changes for the AP Webfeed image feature files." features/manual/bdp/pubsys/media/image_high_ascii.feature features/manual/bdp/pubsys/media/add_image.feature 
+cd
+ssh WHB
+cd .ssh/
+ls
+vim config 
+cd
+sudo apt-get install maven
+which maven
+which mvn
+mvn
+cd Downloads/
+ls
+ls -lart
+mv dfp-axis-examples-1.15.1-dependencies.tar.gz ../code/
+ls -lart
+cd ..
+ls
+cd code/
+ls
+tar -xzvf dfp-axis-examples-1.15.1-dependencies.tar.gz 
+ls
+mkdir DFP
+mv dfp-axis-examples-1.15.1-dependencies.tar.gz DFP/
+ls
+cd DFP/
+ls
+tar -xzvf dfp-axis-examples-1.15.1-dependencies.tar.gz 
+ls
+mv ~/Downloads/dfp-axis-examples-1.15.1.tar.gz .
+ls
+mkdir example
+rm ./*.jar
+ls
+rm README.dependencies 
+ls
+mkdir deps
+ls
+mv dfp-axis-examples-1.15.1-dependencies.tar.gz deps/
+ls
+mv dfp-axis-examples-1.15.1.tar.gz example/
+ls
+cd example/
+ls
+tar -xzvf dfp-axis-examples-1.15.1.tar.gz 
+ls
+cd dfp-examples/
+ls
+cd dfp_axis/
+ls
+vim
+mvn -X compile
+ls
+mvn -X exec:java -Dexec.mainClass="dfp.axis.v201204.GetAllNetworks"
+java -Dexec.mainClass="dfp.axis.v201204.GetAllNetworks"
+ls
+vim request.log 
+im
+vim
+mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.companyservice.CreateCompanies"
+mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.userservice.GetAllUsers"
+mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.companyservice.CreateCompanies"
+mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.companyservice.CreateCompanies"ls
+ls
+rm -rf target/
+ls
+mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.userservice.GetAllUsers"
+mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.companyservice.CreateCompanies"
+ls
+mvn -X compile
+[A
+mvn -X compile
+mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.userservice.GetAllUsers"
+mvn -X compile
+mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.userservice.GetAllUsers"
+mvn -X clean compile
+mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.userservice.GetAllUsers"
+ls
+cd src/
+ls
+cd main/
+ls
+cd java/
+ls
+cd dfp/
+ls
+cd axis/
+ls
+cd v201302/
+ls
+mkdir userservice
+ls
+cd ..
+ls
+cd v201204/
+ls
+vim
+ssh rutl014d
+cd
+cd .m2/
+ls
+cd repository/
+ls
+cd com
+ls
+cd google/
+ls
+cd api-client/
+ls
+cd google-api-client
+ls
+cd 1.14.1-beta/
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd api-ads/
+ls
+cd dfp-axis/
+ls
+cd 1.15.1/
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd api-ads/
+ls
+cd cd
+mvn --version
+cd
+cd code/
+ls
+mkdir maven-sandbox
+cd maven-sandbox/
+mvn archetype:generate -DgroupId=com.technopoetic.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+ls
+tree
+sudo apt-get install tree
+tree
+mvn package
+cd my-app/
+mvn package
+tree
+java -cp target/my-app-1.0-SNAPSHOT.jar com.technopoetic.app.App
+tree
+vim pom.xml 
+cd ..
+ls
+rm -rf my-app/
+ls
+mvn archetype:generate   -DarchetypeGroupId=org.apache.maven.archetypes   -DgroupId=com.mycompany.app   -DartifactId=my-app
+tree
+ls
+cd my-app/
+ls
+tree
+cd ..
+ls
+rm -rf my-app/
+ls
+mvn archetype:generate -DgroupId=com.technopoetic.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+tree
+cd my-app/
+mvn compile
+tree
+mvn test
+ssh rslr008d
+ssh rslr008d.nandomedia.com
+cd ..
+ls
+cd ..
+ls
+cd DFP/
+ls
+cd user-audit-report/
+mvn archetype:generate -DgroupId=com.mcclatchyinteractive.DFPAuditReport -DartifactId=DFPAuditReport -Dversion=1.0-SNAPSHOT
+ls
+cd DFPAuditReport/
+ls
+cd src/
+ls
+cd ..
+tree
+vim pom.xml 
+cd src/main/java/com/mcclatchyinteractive/DFPAuditReport/
+ls
+vim App.java 
+rm App.java 
+cd ../../../..
+cd .
+cd ..
+tree
+rm src/test/java/com/mcclatchyinteractive/DFPAuditReport/AppTest.java 
+tree
+vim src/main/assembly/dependencies.xml 
+mvn compile
+mvn -X exec:java
+mvn -X exec:java -Dexec.mainClass="com.mcclatchyinteractive.DFPAuditReport.GetAllUsers"
+mvn package
+tree
+cp target/DFPAuditReport-1.0-SNAPSHOT.jar ~
+mvn clean compile
+tree
+mvn package
+tree
+java -jar target/DFPAuditReport-1.0-SNAPSHOT.jar 
+mvn clean
+mvn clean compile
+mvn assembly:single
+tree
+mvn clean
+mvn clean compile
+tree
+mvn clean compile
+tree
+mvn package
+tree
+java -jar target/DFPAuditReport-1.0-SNAPSHOT.jar 
+mvn assembly:assembly
+tree
+mvn clean
+mvn clean compile
+tree
+mvn package
+mvn clean compile assembly:single
+tree
+java -jar target/DFPAuditReport-1.0-SNAPSHOT-jar-with-dependencies.jar 
+tree
+cp target/DFPAuditReport-1.0-SNAPSHOT-jar-with-dependencies.jar ~
+tree
+ls
+cd src/
+ls
+cd main/
+ls
+rm -rf assembly/
+ls
+cd java/
+ls
+cd ..
+tree
+cd DFPAuditReport/
+tree
+mvn clean compile
+java -jar target/DFPAuditReport-1.0-SNAPSHOT-jar-with-dependencies.jar 
+mvn clean compile assembly:single
+java -jar target/DFPAuditReport-1.0-SNAPSHOT-jar-with-dependencies.jar 
+mvn clean compile assembly:single
+java -jar target/DFPAuditReport-1.0-SNAPSHOT-jar-with-dependencies.jar 
+mvn clean compile assembly:single
+java -jar target/DFPAuditReport-1.0-SNAPSHOT-jar-with-dependencies.jar 
+mvn clean compile assembly:single
+java -jar target/DFPAuditReport-1.0-SNAPSHOT-jar-with-dependencies.jar 
+ls
+vim DFP_user_audit_report.csv 
+exit
+history
+ls
+cd dfp_axis/
+ls
+mvn -X clean compile
+cd ..
+ls
+cd ..
+ls
+tree
+s
+ls
+cd dfp-examples/
+ls
+cd dfp_axis/
+ls
+vim pom.xml 
+cd 
+cd code/DFP/
+ls
+user-audit-report
+mkdir user-audit-report
+ls
+cd example/
+ls
+cd dfp-examples/
+ls
+cd dfp_axis/
+ls
+vim README 
+tree
+ls
+cd src/
+ls
+cd main/
+ls
+cp -r resources ~/code/DFP/user-audit-report/DFPAuditReport/src/main/
+cp -r assembly ~/code/DFP/user-audit-report/DFPAuditReport/src/main/
+ls
+cd ..
+ls
+cd ..
+ls
+cp src/main/java/dfp/axis/v201302/userservice/GetAllUsers.java ~/code/DFP/user-audit-report/DFPAuditReport/src/main/java/com/mcclatchyinteractive/DFPAuditReport/
+cd
+cd code/DFP/user-audit-report/
+ls
+cd DFPAuditReport/
+tree
+cd
+ls
+java -jar DFPAuditReport-1.0-SNAPSHOT.jar 
+rm DFPAuditReport-1.0-SNAPSHOT.jar 
+ls
+java -jar DFPAuditReport-1.0-SNAPSHOT-jar-with-dependencies.jar 
+exit
+ls
+cd code/
+ls
+cd DFP/
+ls
+cd deps/
+ls
+cd ..
+ls
+cd example/
+ls
+cd dfp-examples/
+ls
+cd dfp_axis/
+ls
+cd target/
+ls
+cd classes/
+ls
+cd dfp/
+ls
+cd axis/
+ls
+cd v201302/
+ls
+cd activity
+cd activitygroupservice/
+ls
+cd
+cd code/DFP/example/
+ls
+cd dfp-examples/
+ls
+vim
+exit
+cd code/
+ls
+cd DFP/
+ls
+cd user-audit-report/
+ls
+cd du
+du DFPAuditReport/
+ls
+tree
+cd DFPAuditReport/target/
+ls
+ls -al
+ls -alh
+cd ..
+tree
+exit
+cd ..
+ls
+cd mi_automation/
+ls
+cd features/manual/
+ls
+vim
+cd ~/code/mi_automation/
+svn up
+svn status
+svn ci -m "Removing image sort order scenarios." features/manual/bdp/pubsys/media/add_image.feature 
+exit
+tmux
+tmux ls
+tmux
+tmux
+ssh rutl014d
+cd code/DFP/user-audit-report/
+ls
+cd DFPAuditReport/
+ls
+git status
+git commit -m "Initial baseline, working application, maven set up to build jar-with-dependencies."
+git config --global user.email rhibbitts@mcclatchyinteractive.com
+git commit --amend --reset-author
+vim
+history | grep 'mvn'
+mvn clean compile assembly:single
+tree
+java -jar target/DFPAuditReport-1.0-SNAPSHOT-jar-with-dependencies.jar 
+ls
+vim DFP_user_audit_report.csv 
+mvn clean
+tree
+rm DFP_user_audit_report.csv 
+l
+ls
+tree
+rm request.log 
+rm soap.log 
+tree
+ls
+cd ..
+ls
+tar -czvf DFPAuditReport/ DFPAuditReport.tar.gz
+tar -czvf DFPAuditReport.tar.gz DFPAuditReport/
+ls
+ls -lah
+tree
+ssh rutl014d
+cd code/
+rv,
+rvm
+cd
+ruby -v
+gem env gemdir
+mkdir code/railsapp
+echo "rvm 1.9.3@railsapp" > code/railsapp/.rvmrc
+cd code/railsapp/
+rvm gemset create railsapp
+rvm reload
+gem env gemdir
+ls
+ls -al
+gem install rails
+rails new .
+rails server
+gem 'therubyracer'
+ls
+vim Gemfile
+bundle install
+rails server
+ll
+tree
+rails server -d
+ssh rutl014d
+cd code/
+ls
+mkdir premailer
+cd premailer/
+git clone https://github.com/alexdunae/premailer.git
+ls
+cd premailer/
+ls
+ll
+tree bin/
+cd bin/
+ls
+vim premailer 
+ssh rutl014d
+ruby
+irb
+ssh rutl014d
+sudo apt-get uninstall perlbrew
+sudo apt-get remove perlbrew
+ll
+ssh rutl014d
+cd code/mi_automation/
+svn up
+svn status
+ls
+cd features/
+tree
+ls
+cd automated/sitemgr/products/pubsys/
+ls
+cd newsletters/
+ls
+tmux
+ls
+vim
+cd ~/code/mi_automation/
+ls
+svn up
+cd features/automated/sitemgr/products/pubsys/newsletters/
+ls
+ll
+vim
+cd
+cd code/mi_automation/
+ls
+rake @MIDEV-12006
+bundle install
+rake @MIDEV-12006
+ls
+svn up
+rake @MIDEV-12006
+ls
+ll
+cd features/
+ll
+cd automated/
+ls
+cd
+cd code/
+ll
+cd mi_automation/
+ll
+rake @MIDEV-12006
+run rake ENVIRONMENT=qasite4 TAGS=@MIDEV-12006
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-12006
+ssh rutl014d
+sudo apt-get install virtualbox
+ssh rutl014d
+cd code/
+cd mi_automation/
+svn up
+ls
+cd features/automated/step_definitions/
+tmux
+cd ~/code/mi_automation/
+history | grep rake
+rake ENVIRONMENT=qasite4 TAGS=MIDEV-12006
+bundle install
+rake ENVIRONMENT=qasite4 TAGS=MIDEV-12006
+rake TAGS=MIDEV-12006
+history | grep rake
+rake TAGS=@MIDEV-12006
+grep -r 'Clearing test results
+Using the default profile...
+0 scenarios
+0 steps
+grep -r 'A template is available' .
+grep -r 'vendor' .
+grep -r 'vendor' . | grep -v svn
+cd features/automated/aurora/site_live_page_content/
+ls
+cd ..
+ls
+cd ..
+ls
+cd features/
+ls
+cd automated/
+ls
+cd step_definitions/
+ls
+cd ..
+ls
+cd aurora/
+ls
+cd site_live_page_content/
+ls
+touch upickem_mastheads.feature
+ls
+cd ..
+grep -r 'I navigate to the ' .
+ls
+cd site_live_page_content/
+ls
+rm vendor_mastheads.feature 
+svn status
+svn revert
+svn revert vendor_mastheads.feature
+svn status
+rm upickem_mastheads.feature 
+touch upickem_vendor.feature
+ls
+rm upickem_mastheads.feature 
+grep -r 'page source'
+cd ~/code/mi_automation/
+rake TAGS=@upickem_vendor
+rake TAGS=@MIDEV-12134
+grep -r 'page source' .
+grep -r 'page source' . | grep -v svn
+rake TAGS=@MIDEV-12134
+grep -r 'Then I see' . | grep -v svn
+grep -r 'content_div' .
+cd features/automated/support/pages/
+ls
+cd aurora/
+ls
+rake TAGS=@MIDEV-12134
+cd ..
+ls
+cd step_definitions/
+ls
+touch upickem_steps.rb
+ls
+rake TAGS=@MIDEV-12134
+grep -r 'content' .
+rake TAGS=@MIDEV-12134
+cd ..
+grep -r 'query' .
+grep -r 'parameter' .
+grep -r 'parameter' . | grep -v svn
+grep -r 'query string' . | grep -v svn
+grep -r 'query' . | grep -v svn
+grep -r 'Given.*<.*$' .
+rake TAGS=@MIDEV-12134
+rake TAGS=@rhibbitts
+rake TAGS=@MIDEV-12134
+rake TAGS=@rhibbitts
+ssh rutl014d
+cd code/mi_automation/
+svn status
+svn diff features/automated/support/externals/pages/base_page.rb 
+svn revert features/automated/support/externals/pages/base_page.rb 
+svn diff features/automated/sitemgr/products/pubsys/nui/section_manager.feature 
+svn status 
+svn diff features/automated/support/pages/aurora/aurora_section_digest_page.rb 
+svn revert features/automated/support/pages/aurora/aurora_section_digest_page.rb 
+svn status
+svn diff features/automated/classads_api_test.feature 
+svn revert features/automated/classads_api_test.feature 
+svn status
+svn up
+svn status
+svn diff features/automated/sitemgr/products/pubsys/nui/section_manager.feature 
+svn status
+tmux
+vim
+exit
+rake TAGS=@section_fronts
+echo $TERM
+vim ~/.bashrc
+msgcat --color=test
+vim /home/rhibbitts/.tmux.conf 
+tmux
+ssh rutl014d
+echo $TERM
+rake TAGS=@masthead
+rake TAGS=@headshot
+rake TAGS=@footer
+cd
+python
+exit
+cd code/mi_automation/
+vim
+tmux
+tmux ls
+tmux
+cd
+ssh rutl014d
+sh rutl014d
+ssh rutl014d
+tmux
+exit
+svn status
+svn move features/automated/step_definitions/upickem_steps.rb features/automated/step_definitions/upickem_vendor_steps.rb
+svn status
+rake TAGS=@MIDEV-11778
+grep -r 'raise' | grep -v svn
+rake TAGS=@MIDEV-11778
+ls
+cd features/manual/
+ls
+cd aurora/
+ls
+cd vendor_pages/
+ls
+cd ..
+ls
+cd automated/
+ls
+cd aurora/
+ls
+cd site_live_page_content/
+ls
+cd ~/code/mi_automation/
+rake TAGS=@MIDEV-11778
+svn status
+history | grep diff
+history
+
+history
+ls
+rm ./\$MYBASHRC 
+ls
+vim
+svn status
+cd ..
+vim
+svn diff features/automated/step_definitions/navigation_steps.rb features/automated/step_definitions/upickem_vendor_steps.rb features/automated/aurora/site_live_page_content/upickem_vendor.feature features/automated/support/pages/aurora/aurora_vendor_page.rb > MIDEV_11778.patch 
+ls
+vim MIDEV_11778.patch 
+cd ..
+ls
+mkdir python
+mv python_challenge/ python
+ls
+mv python_hard_way/ python
+ls
+mkdir perl
+mv *.pl perl/
+ls
+python
+python python/99bottles.py 
+cd code/python/
+tmux
+vim
+cd Downloads/dfp_api_python_9.7.0/
+ls
+cd examples/
+ls
+cd adspygoogle/
+ls
+cd dfp/
+ls
+cd v201302/
+ls
+python get_all_users.py 
+cd ..
+ls
+python examples/adspygoogle/dfp/v201302/get_all_users.py 
+ls
+python config.py 
+python examples/adspygoogle/dfp/v201302/get_all_users.py 
+python setup.py 
+python examples/adspygoogle/dfp/v201302/get_all_users.py 
+cd adspygoogle/
+python ../examples/adspygoogle/dfp/v201302/get_all_users.py 
+python
+ls
+cd ..
+ls
+python setup.py build install
+sudo python setup.py build install
+python examples/adspygoogle/dfp/v201302/get_all_users.py 
+python help('modules')
+python
+pydoc modules
+pip freeze
+sudo apt-get install python-pip
+pip freeze
+python examples/adspygoogle/dfp/v201302/get_all_users.py 
+cd ~/Downloads/ZSI-2.1-a1/
+ls
+python setup.py 
+python setup.py bundle install
+python setup.py install
+sudo python setup.py install
+cd ../dfp_api_python_9.7.0/
+ls
+python examples/adspygoogle/dfp/v201302/get_all_users.py 
+pip freeze
+sudo python ../ZSI-2.1-a1/setup.py build install
+cd ..
+cd ZSI-2.1-a1/
+ls
+sudo python setup.py build install
+pip freeze
+cd ..
+ls
+cd fpconst-0.7.2/
+ls
+sudo python setup.py build install
+cd ../dfp_api_python_9.7.0/
+ls
+python examples/adspygoogle/dfp/v201302/get_all_users.py 
+exit
+python
+cd Downloads/dfp_api_python_9.7.0/
+ls
+python config.py 
+ls
+cd
+ls
+tmux 
+ssh rutl014d
+cd ..
+ls
+cd google-api-ads-ruby/
+ls
+cd dfp_api/
+ls
+cd examples/
+ls
+cd v201302/
+ls
+cd user_
+cd user_team_association_service/
+ls
+ruby -rubygems get_all_user_team_associations.rb 
+rvm use ruby-1.8.7
+ruby -rubygems get_all_user_team_associations.rb 
+cp get_all_user_team_associations.rb ~/code/ruby_rails/dfp_audit_report/
+cd
+cd code/ruby_rails/
+ls
+cd dfp_audit_report/
+ls
+ruby -rubygems get_all_users.rb 
+cd
+ls
+mkdir logs
+ls
+cd code/
+ls
+mkdir ruby_rails
+ls
+cd ruby_rails/
+rvm
+type rvm | head -n 1
+rvm list known
+rvm use 1.8.7
+rvm install ruby-1.8.7-p371
+rvm 1.8.7
+rvm use 1.8.7
+gem install google-dfp-api
+ls
+mkdir dfp_audit_report
+cd dfp_audit_report/
+touch get_all_users.rb
+cd ..
+git clone https://code.google.com/p/google-api-ads-ruby/
+ls
+cd google-api-ads-ruby/
+ls
+cd dfp_api/
+ls
+cd examples/
+ls
+cd v201302/
+ls
+cd user_service/
+ls
+cp get_all_users.rb ~/code/ruby_rails/dfp_audit_report/
+cd
+cd code/ruby_rails/dfp_audit_report/
+ls
+ruby get_all_users.rb 
+rvm list known
+rvm rubies
+rvm list
+rvm gemdir
+rvm gems
+rvm usage
+rvm gemset
+history | grep gem
+gem install google-dfp-api
+rvm gem list
+gem list
+ruby get_all_users.rb 
+ruby -rubygems get_all_users.rb 
+ls
+gem install mailcatcher
+mailcatcher
+ls
+ruby -rubygems get_all_users.rb 
+ls
+vim csvout 
+ls
+ruby -rubygems get_all_users.rb 
+ls
+ls -al
+vim dfp_user_audit_report.csv 
+ruby -rubygems get_all_users.rb 
+ls
+vim dfp_user_audit_report.csv 
+ls -al
+rm dfp_user_audit_report.csv 
+ls
+vim dfp_user_audit_report.csv 
+cd ..
+ls
+cd google-api-ads-ruby/
+ls
+cd dfp_api/
+ls
+cd examples/
+ls
+cd v201302/
+ls
+cd team_service/
+ls
+vim get_team
+vim get_team.rb 
+vim get_teams_by_statement.rb 
+cd
+cd code/mi_automation/
+rake @MIDEV-11778
+rake TAGS=@MIDEV-11778
+svn status
+svn up
+svn ci -m "Feature files for MIDEV-11778" features/automated/step_definitions/navigation_steps.rb features/automated/step_definitions/upickem_steps.rb features/automated/aurora/site_live_page_content/upickem_vendor.feature features/automated/support/pages/aurora/aurora_vendor_page.rb
+svn ci -m "Feature files for MIDEV-11778" features/automated/step_definitions/navigation_steps.rb features/automated/step_definitions/upickem_vendor_steps.rb features/automated/aurora/site_live_page_content/upickem_vendor.feature features/automated/support/pages/aurora/aurora_vendor_page.rb
+gem install
+gem list
+exit
+ls
+vim changes 
+exit
+cd
+cd code/python/
+ls
+python 99_template.py 
+cd
+ls
+ls -al
+which siege
+ls
+ls -al
+cd dotfiles/
+ls
+cd siege/
+ls
+ls -al
+cd
+ls
+cd tmp/
+ls
+cd my_stuff/
+ls
+cd ..
+ls
+cd ..
+ls
+cd code/
+ls
+exit
+cd code/
+ls
+cd ruby_rails/
+ls
+cd dfp_audit_report/
+ls
+tmux
+ruby -rubygems get_all_users.rb 
+rvm use ruby-1.8.7
+ruby -rubygems get_all_users.rb 
+ls
+vim dfp_user_audit_report.csv 
+ruby -rubygems get_all_users.rb 
+gem list
+mailcatcher
+ruby -rubygems get_all_users.rb 
+gem list
+ruby -rubygems get_all_users.rb 
+ls -al
+git init
+ls
+git status
+git add get_all_users.rb
+git status
+git commit -m "Initial commit of working code.  Still needs to be tested in dev environment."
+cd
+cd code/python/
+ls
+python 99_template.py 
+python 99_3.py 
+python 99_4.py 
+python 99_3.py 
+ls -al
+python 99_3.py 
+exit
+python 99_3.py 
+sudo add-apt-repository ppa:nvbn-rm/ppa 
+sudo apt-get update
+sudo apt-get install everpad
+everpad
+ls -al
+ 
+cd everpad   
+cd .everpad/
+ls
+cd data/
+ls
+cd 10/
+ls
+cd ..
+ls -al
+cd 77/
+ls
+cd ..
+ls
+cd ..
+ls
+sqlite3
+cd 
+ls -al
+cd .nevernote/
+ls
+cd db/
+ls
+cd
+python
+tmux
+ssh rutl014d
+sqlite3 test.db
+ls
+python test_sqlite.python
+mv test_sqlite.python code/python/
+python code/python/test_sqlite.python
+ls
+python test_sqlite.python
+mv test_sqlite.python code/python/
+cd code/python/
+ls
+mkdir weekly_report_script
+mv test_sqlite.python weekly_report_script/
+cd weekly_report_script/
+ls
+python test_sqlite.python
+vim
