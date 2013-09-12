@@ -1,1095 +1,3 @@
-scp /home/rhibbitts/Downloads/cb_feed.xml rhibbitts@rutl014d.nandomedia.com:/nm/home/staff/rhibbitts/cb_feed/
-cd Downloads/
-ls
-nano cb_feed.xml 
-ssh rweb024p.nandomedia.com
-ssh rutl014d
-siege -v
-siege -V
-ssh rweb002t.nandomedia.com
-ssh rslr008d.nandomedia.com
-ssh rutl014d
-siege
-siege -C
-nano /home/rhibbitts/.siegerc 
-siege -C
-siege
-ssh rutl014d
-siege -C
-cd siege/logs/
-ls
-nano siege.log 
-cd ..
-ls
-cd urls/
-ls
-nano urls.txt
-siege -t30M -u http://edge-services.devel.nandomedia.com:9000/mi_services/search/search.json?&site_id=177&sf_site_id=177&sf_vendor_name_s=CareerBuilder&rows=100&sf_is_top_job_b=true&fl=url_s,employer_name_s,title_t,employee_type_t,classification_name_t,location_t,body_t
-siege -t30M
-siege -C
-siege
-siege -c100 -t30M
-siege -c100 -t30M -m "Rerun of Initial Careerbuilder Test with proper siege configs."
-ssh rslr008d.nandomedia.com
-history
-scp rhibbitts@rweb024p.nandomedia.com:nm/home/mics/mics006f/cb_feed.xml /home/rhibbitts/Downloads/
-scp rhibbitts@rweb024p.nandomedia.com:/nm/home/mics/mics006f/cb_feed.xml /home/rhibbitts/Downloads/
-scp /home/rhibbitts/Downloads/cb_feed.xml rhibbitts@rutl014d.nandomedia.com:/nm/home/staff/rhibbitts/cb_feed/
-which python
-pwd
-cd
-python siege_urls.py 
-siege -i -c100 -f service_urls.txt -t 30m
-siege -i -c100 -f /home/rhibbitt -t30m
-python siege_homefinder_urls.py 
-siege -i -c100 -f /home/rhibbitts/siege/urls/service_urls.txt -t 30m
-siege -i -c100 -f /home/rhibbitts/siege/urls/urls.txt -t 30m
-siege -i -c50 -f /home/rhibbitts/siege/urls/urls.txt -t 30m
-siege -c50 -f /home/rhibbitts/siege/urls/urls.txt -t 30m
-ssh rslr008d.nandomedia.com
-ssh rslr009d.nandomedia.com
-nano /home/rhibbitts/siege/urls/urls.txt
-siege
-siege -c50 -v -t5m
-nano /home/rhibbitts/siege/urls/urls.txt
-siege -c50 -v -t5m
-vi siege/logs/siege.log 
-vi
-vi siege/logs/siege.log 
-sublime
-vi siege/logs/siege.log 
-ssh rslr008d.nandomedia.com
-curl -kL http://install.perlbrew.pl | bash
-vi .bash_profile 
-exit
-perlbrew
-which perl
-which perlbrew
-perl -v
-perlbrew install 5.16.0
-perlbrew use 5.16.0
-which perl
-perl -v
-exit
-tail -f ~/perl5/perlbrew/build.perl-5.16.0.log
-perl -v
-exit
-screen -ls
-exit
-ls
-exit
-vi
-ls
-exit
-ls
-exit
-vi Mojo/helloworld.pl 
-exit
-curl http://127.0.0.1:3000/
-curl http://127.0.0.1:3000/time
-http://127.0.0.1:3000/timeexit
-exit
-morbo Mojo/helloworld.pl 
-exit
-perlbrew use 5.16.0
-perl -v
-which perl
-curl get.mojolicio.us | sh
-mojo
-sudo curl get.mojolicio.us | sh
-vi
-ll
-vi .screenrc
-screen
-sudo apt-get install screen
-screen
-ll
-vi .screenrc 
-screen
-vi .screenrc 
-morbo Mojo/helloworld.pl 
-curl http://127.0.0.1:3000/
-screen 
-exit
-cd Mojo/
-ls
-rm helloworld.pl 
-ls
-cd
-exit
-screen
-exit
-sudo aptitude update && sudo aptitude install xubuntu-desktop
-vi
-ls
-vi siege_urls.py 
-python fizzbuzz.py 
-vi fizzbuzz.py 
-python fizzbuzz.py 
-vi fizzbuzz.py 
-python fizzbuzz.py 
-vi fizzbuzz.py 
-python fizzbuzz.py 
-vi fizzbuzz.py 
-python fizzbuzz.py 
-vi fizzbuzz.py 
-python fizzbuzz.py 
-exit
-vi
-ctags
-ssh rutl014d
-ctags
-sudo apt-get install exuberant-ctags
-sudo apt-get autoremove
-ll
-mkdir .vim
-git clone git://github.com/tpope/vim-pathogen.git pathogen
-mv pathogen/autoload ~/.vim/autoload
-cd .vim/
-git init
-git add
-ls
-git add .
-git status
-git commit -m "Initial Commit."
-git config --global user.email rhibbitts@mcclatchyinteractive.com
-git commit --amend --reset-author
-git log
-cd
-vi .vimrc
-cd .vim/
-ls
-mkdir bundle
-ls
-git add .
-git status
-ls
-vi ~/.vimrc
-vi -v
-vi
-cd
-ssh rutl014d
-sudo apt-get install vim
-vi ~/.vimrc
-cd .vim/
-ll
-cd bundle/
-ls
-cd ..
-git clone git://github.com/scrooloose/nerdcommenter.git bundle/nerdcommenter
-vi
-ls
-cd bundle/
-ls
-vi
-vi ~/.vimrc
-vi
-;s
-ls
-git clone https://github.com/scrooloose/nerdtree nerdtree
-ls
-vi
-ctags
-git clone git://github.com/majutsushi/tagbar tagbar
-vi
-cd ..
-mkdir dotfiles
-cd dotfiles/
-ls
-mkdir vim
-cd ..
-cp -r .vim dotfiles/vim/
-ls
-ls dotfiles/vim/
-ll dotfiles/vim/
-cd dotfiles/vim/
-cd .vim/
-ls
-cd bundle/
-ls
-cd
-rm -r .vim
-y
-ln -s dotfiles/vim/.vim .vim
-ll
-vi
-vi .viminfo 
-mv .viminfo dotfiles/vim/
-ll
-ls -al dotfiles/vim/
-ln -s dotfiles/vim/.viminfo .viminfo
-ll
-mv .vimrc dotfiles/vim/
-ln -s dotfiles/vim/.vimrc .vimrc
-ll
-vi
-vi ..vimrc.un~ 
-ll
-mv .viminfo dotfiles/vim/
-ls dotfiles/vim/
-ls -al dotfiles/vim/
-ll
-zypper uninstall wireshark
-sudo zypper uninstall wireshark
-katapult
-menu-editor
-ll
-cd .kde/
-ls
-cd ..
-cd .config/
-ls
-cd menus/
-ls
-cd applications-merged/
-ls
-cd
-git clone git://github.com/uguu-org/vim-matrix-screensaver matrix
-ls
-kmenuedit
-thunar
-kmenuedit
-ksysinfo
-sysinfo
-kinfocenter
-vi
-git-svn
-svn-git
-ls
-ll
-sudo apt-get install xubuntu-desktop
-ls
-;;
-ll
-cd solr/
-ls
-ll
-cd 3.2/
-ls
-cd solr/
-ls
-echo $PATH
-cd solr/
-which pidgin
-pidgin
-/usr/bin/pidgin 
-sudo apt-get remove akonadi-facebook
-sudo apt-get autorem
-sudo apt-get remove akregator
-sudo apt-get remove dragonplayer
-sudo apt-get remove kmail
-vi .vimrc 
-ls
-ll
-vi
-vi fizzbuzz.py 
-ls tmp/
-ls
-ll
-mv .viminfo dotfiles/vim/
-ll
-ln -s dotfiles/vim/.viminfo .viminfo
-ll
-rm ..vimrc.un~ 
-wireshark
-rm .wireshark/
-rm -hr .wireshark/
-rm -r .wireshark/
-ll
-rm -r .thunderbird/
-ll
-rm .remove_these_get_rid_kde.un~ 
-rm -r pathogen/
-ll
-mkdir dotfiles/siege
-mv .siegerc dotfiles/siege/
-ln -s dotfiles/siege/.siegerc .siegerc
-ll
-mkdir dotfiles/bash
-mv .bash* dotfiles/bash/
-ll
-ln -s dotfiles/bash/.bash_history .bash_history
-ln -s dotfiles/bash/.bash_logout .bash_logout
-ln -s dotfiles/bash/.bash_profile .bash_profile
-ln -s dotfiles/bash/.bashrc .bashrc
-ll
-exit
-mkdir tmp
-ls
-ll
-exit
-cd Downloads/
-ls
-java -jar solrmeter-0.3.0.jar 
-ls
-cd solr/
-ls -lct
-ls -lat
-cd 2013-04-09-1055/
-ls
-ls -lat
-vim req_extract 
-cd
-cd dotfiles/
-git remotes -v
-git remote -v
-git fetch origin
-git status
-git add
-git add vim/.vim/*
-git status
-git merge origin/master
-vim
-cd vim/.vim/bundle/
-ls
-cd ctrlp/
-ls
-ls -al
-cd ..
-git fetch origin/master
-git fetch origin
-git merge origin/master
-git status
-git add
-git add .
-git status
-git merge origin/master
-git commit vim/.vimrc -m "I don't know"
-git merge origin/master
-git status
-git commit -m "Still don't know"
-git merge origin/master
-vim
-cd vim/.vim/
-ls
-cd bundle/
-ls
-cd ctrlp/
-ls
-cd ..
-git status
-git fetch
-git status
-cd ..
-rm -rf dotfiles/
-git clone https://github.com/technopoetic/dotfiles.git dotfiles
-ls
-ll
-vim
-ls -al
-rm -rf dotfiles
-git clone https://github.com/technopoetic/dotfiles.git dotfiles
-vim
-ls
-vim id_rsa_laptop.pub 
-ls
-cd features/
-ls
-cd automated/
-ls
-cd aurora/detail_pages/
-ls
-cd story_detail/
-ls
-vim story_with_headshot.feature 
-cd 
-cd code/
-cd mi_automation/
-ls -al
-vim .rvmrc 
-rvm install ruby-1.9.3-p374
-cd
-cd code/mi_automation/
-ls
-cd features/
-ls
-cd automated/
-ls
-cd aurora/
-ls
-cd detail_pages/
-ls
-cd story_detail/
-ls
-grep '@' .
-grep '@' *.feature
-cd ..
-cd
-cd code/mi_automation/
-rake ENVIRONMENT=qasite1 TAGS=@story_detail
-rvm list default
-rake ENVIRONMENT=qasite4 TAGS=@smoke_test
-ls
-cd ..
-ls
-cd mi_automation/
-ls
-bundle update
-rake ENVIRONMENT=qasite4 TAGS=@smoke_test
-rake ENVIRONMENT=qasite1 TAGS=@story_detail
-grep -r 'Verify the Headshot Highlight media version' .
-grep -r 'Verify the Headshot Highlight media version' . | grep -v svn
-cd features/automated/aurora/detail_pages/story_detail/story_with_headshot.feature
-cd features/automated/aurora/detail_pages/story_detail/
-ls
-vim story_with_headshot.feature 
-cd
-cd code/
-cd mi_automation/
-rake ENVIRONMENT=qasite1 TAGS=@story_detail
-rake ENVIRONMENT=qasite1 TAGS=@auto_crop
-ls
-cd features/
-ls
-cd automated/
-ls
-cd aurora/
-ls
-cd detail_pages/
-ls
-cd gallery_detail/
-ls
-cd ..
-ls
-cd gallery_detail/
-ls
-vim gallery_images.feature 
-cd
-cd code/mi_automation/
-rake ENVIRONMENT=qasite1 TAGS=@gallery_detail
-rake ENVIRONMENT=qasite4 TAGS=@gallery_detail
-ls
-cd features/
-ls
-cd automated/
-ls
-cd aurora/
-ls
-cd detail_pages/gallery_detail/
-ls
-vim gallery_images.feature 
-cd
-cd code/mi_automation/
-svn up
-rake ENVIRONMENT=qasite1 TAGS=@auto_crop
-sudo apt-get remove perlbrew
-vim 
-la
-ll
-cd perl5/
-ls
-ll
-cd bin/
-ls
-cd ..
-ls
-cd lib/
-ls
-cd perl5/
-ls
-cd ..
-cd
-cd code/
-ls
-cd mi_automation/
-ls
-svn up
-svn info
-cd
-cd ..
-cd 
-cd .ssh/
-ls
-ssh-copy-id -i id_rsa_laptop.pub rhibbitts@srcctl.devel.nandomedia.com
-ssh srcctl.devel.nandomedia.com
-python
-vim
-cd
-cd code/
-mkdir python_hard_way
-cd python_hard_way/
-python ex1.py 
-mv ~/fibonacci.py .
-ls
-python fibonacci.py 
-python
-cd code/
-ls
-cd mi_automation/
-svn up
-ls
-cd datafiles/
-ls
-ll
-cd ..
-ls
-cd features/
-ls
-cd automated/
-ls
-cd sitemgr/
-ls
-cd products/pubsys/nui/
-ls
-vim section_manager.feature 
-tmux attach
-vim section_manager.feature 
-cd
-cd code/mi_automation/
-grep -r 'I create a section through the API' .
-grep -r 'through the API' .
-grep -r 'I log into the Site Manager' .
-grep -r 'I log into the Site Manager' ./*.rb
-grep -r 'I log into the Site Manager' *.rb
-grep -r 'I log into the ' *.rb
-grep -r 'I log into' *.rb
-grep -r 'I log into' ./*.rb
-grep -r 'through the API' *.rb
-grep -r 'through the API' .
-grep -r 'through the API' *.rb
-man grep
-grep -r 'I create a section through the API' .
-grep -r 'I create a section through the API' . | grep -v .svn
-grep -r 'I create a section through the API' . | grep -v svn
-grep -r 'I create a section through the API' . | grep --color -v svn
-ssh rutl014d
-ls
-cd etc/
-ls
-cd ..
-ls
-cd work/
-ls
-cd ..
-ls
-cd solr/
-ls
-cd data/
-ls
-cd ..
-ls
-cd conf/
-ls
-man scp
-cd ..
-ls
-cd ..
-ls
-java -jar start.jar 
-java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.6.2/example/solr/ start.jar 
-java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.6.2/example/solr start.jar 
-java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.6.2/example/solr/ start.jar 
-java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.6.2/example/multicore start.jar 
-java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.6.2/example/solr start.jar 
-cd ..
-cd apache-solr-3.4.0/
-ls
-cd example/
-ls
-java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.4.0/example/solr start.jar 
-ls
-cd
-cd code/apache-solr-3.4.0/
-ls
-cd example/
-ls
-java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.4.0/example/solr start.jar 
-which siege
-cd
-which siege
-siege
-pwd
-exit
-cd
-cd code/
-ls
-cd solrstrap/
-cd ..
-ls
-mkdir solr_construct
-ls
-cd solr_construct/
-mkdir QA
-cd QA/
-scp -rp rhibbitts@rslr001t:/nm/local/var/solr/cores/newsroom/data/index/ .
-scp -rp rhibbitts@rslr001t.nandomedia.com:/nm/local/var/solr/cores/newsroom/data/index/ .
-scp rhibbitts@rslr001t.nandomedia.com:/nm/local/var/solr/cores/newsroom/data/index/index.tar.gz .
-scp rhibbitts@rslr008d.nandomedia.com:/nm/local/var/solr/cores/newsroom/data/index/index.tar.gz ../rhibbitts/
-scp rhibbitts@rslr008d.nandomedia.com:/nm/local/var/solr/cores/rhibbitts/data/index/index.tar.gz ../rhibbitts/
-scp rhibbitts@rslr008d.nandomedia.com:/nm/local/var/solr/cores/rhibbitts/conf/*.xml ../rhibbitts/conf/
-cd ..
-ls
-cd rhibbitts/
-ls
-mkdir logs_from_dev
-cd logs_from_dev/
-scp rhibbitts@rslr008d.nandomedia.com:/nm/local/var/solr/logs/*.log .
-cd ../../QA/
-ls
-mkdir logs_from_dev
-cd logs_from_dev/
-scp rhibbitts@rslr001t.nandomedia.com:/nm/local/var/solr/logs/*.log .
-cd
-ssh rslr008d
-exit
-cd Downloads/
-ls
-mv apache-solr-3.4.0.tgz ~/code/
-cd ../code/
-ls
-gunzip -q apache-solr-3.4.0.tgz 
-ls
-ll
-rm apache-solr-3.4.0.tar 
-tar
-tar --help
-ll
-cd ~/Downloads/
-ls
-ll
-cp apache-solr-3.6.2.tgz ~/code/
-cd
-cd code/
-ls
-ll
-tar -xzvf apache-solr-3.6.2.tgz 
-ls
-cd apache-solr-3.6.2/
-ls
-cd example/
-ls
-ll
-java -jar start.jar 
-ls
-ll
-cd work/
-ls
-cd ..
-cd solr/
-ls
-vim README.txt 
-ls
-cd conf/
-ls
-mv solrconfig.xml stock_solrconfig.xml
-cp ~/code/solr_construct/rhibbitts/conf/solrconfig.xml .
-ls
-vim solrconfig.xml 
-mv schema.xml stock_schema.xml
-cp ~/code/solr_construct/rhibbitts/conf/schema.xml .
-cd ..
-ls
-vim solr.xml 
-cd ..
-ls
-java -jar start.jar 
-ls
-cd solr/
-ls
-cd data/
-ls
-cd index/
-ls
-cd ..
-ls
-cd conf/
-ls
-vim solrconfig.xml 
-exit
-cd code/apache-solr-stock/
-ls
-cd apache-solr-3.4.0/
-ls
-cd example/
-ls
-java -jar start.jar 
-cd ..
-cd ~/code/
-ls
-cd apache-solr-3.4.0/
-ls
-cd example/
-ls
-java -jar start.jar 
-history | grep 'solr'
-java -jar -Dsolr.solr.home=/home/rhibbitts/code/apache-solr-3.4.0/example/solr start.jar
-svn up
-svn status
-ssh rutl014d
-scp rhibbitts@rutl014d:/nm/home/staff/rhibbitts/tmux.conf ~
-ssh rutl014d
-scp rhibbitts@rutl014d:/nm/home/staff/rhibbitts/tmux.conf ~
-man scp
-scp rhibbitts@rutl014d:/nm/home/staff/rhibbitts/tmux.conf /home/rhibbitts/
-exit
-cd
-ls
-ll
-scp rhibbitts@rutl014d.nandomedia.com:/nm/home/staff/rhibbitts/tmux.conf .
-history | grep 'scp'
-ssh rutl014d
-scp rhibbitts@rutl014d.nandomedia.com:/nm/home/staff/rhibbitts/.tmux.conf .
-exit
-ls
-cd features/
-cd output/
-ls
-exit
-svn status
-exit
-vim
-;q
-vim
-exit
-cd
-cd dotfiles/vim/
-ls
-ls -al
-cd .vim/
-ls
-cd bundle/
-ls
-git clone git://github.com/majutsushi/tagbar
-ls
-ctags
-sudo apt-get install exuberant-ctags 
-ls
-rm -rf tagbar/
-ls
-cd ~/Downloads/
-ls
-cp taglist_46.zip ~/dotfiles/vim/.vim/bundle/
-ls
-cd ~/dotfiles/vim/.vim/bundle/
-ls
-unzip taglist_46.zip taglist
-unzip taglist taglist_46.zip
-unzip taglist_46.zip
-ls
-ls -al
-mkdir taglist
-mv plugin/ taglist
-mv doc/ taglist
-ls
-rm taglist_46.zip 
-cd
-cd code/mi_automation/
-svn up
-grep -r 'AUTO-182' features/
-grep -r 'AUTO-182' .
-grep -r 'AUTO-183' .
-grep -r 'AUTO-183' . | grep -v svn
-grep -r 'AUTO-195' . | grep -v svn
-grep --color 'existing section' . | grep -v svn
-grep -r --color 'existing section' . | grep -v svn
-grep -r 'existing section' . | grep -v --color  svn
-exit
-cd
-cd dotfiles/vim/.vim/
-ls
-cd bundle/
-ls
-http://github.com/tomtom/tcomment_vim
-git clone http://github.com/tomtom/tcomment_vim
-ls
-cd
-cd code/mi_automation/
-grep -r --color 'I select' .
-ls
-cd features/
-ls
-cd automated/
-ls
-cd step_definitions/
-ls
-grep -r --color 'I select' .
-grep -r --color 'I select .+ dropdown' .
-grep -r --color 'I select*layout' .
-grep -r --color 'layout' .
-grep -r --color '"Layout" dropdown' .
-grep -r --color 'dropdown' .
-cd
-cd code/mi_automation/
-svn status
-svn revert 
-svn revert features/automated/aurora/detail_pages/gallery_detail/gallery_images.feature 
-svn revert features/automated/sitemgr/products/pubsys/nui/section_manager.feature 
-svn status
-grep -r 'class' .
-exit
-cd code/mi_automation/
-svn up
-svn info
-svn status
-svn revert
-svn diff features/output
-svn resolve --accept working
-screen
-tmux
-sudo apt-get install tmux
-tmux
-ssh rutl014d
-svn status
-ssh rutl014d
-svn status
-svn resolve --accept working features/output/
-svn status
-svn revert
-svn revert features/output/
-svn status
-svn up
-tmux
-exit
-cd 
-cd Downloads/
-ls
-cd lplinux/
-ls
-./install_lastpass.sh 
-cd
-cd Downloads/
-ls
-ll
-cd lplinux/
-ls
-./install_lastpass.sh 
-sudo ./install_lastpass.sh 
-ls
-cd
-ll
-vim six.py 
-rm six.py 
-vim
-exit
-history | grep 'rake'
-rake TAGS=@AUTO-193
-bundle install
-bundle show redcarpet
-
-rake TAGS=@AUTO-193
-grep -r 'display' .
-grep -r 'display' *.rb
-grep -r 'value' *.rb
-grep -r 'value' ./*.rb
-grep -r --include *.rb 'value' .
-grep -r --include=*.rb .
-grep -r --include=*.rb 'value' .
-exit
-cd
-cd Downloads/
-ls
-cd lplinux/
-ls
-./uninstall_lastpass.sh 
-cd code/
-ls
-cd mi_automation/
-history | grep 'rake'
-tmux
-ssh rutl014d
-vim
-;q
-vim
-;q
-exit
-rails g cucumber:install --help
-cd
-cd code/mi_automation/
-rails g cucumber:install --help
-cucumber:install --help
-ll
-cd
-cd .rvm/
-ls
-cd gems
-ls
-cd
-cd code/mi_automation/
-grep -r --include=*.rb 'verify_true' .
-grep -r --include=*.rb 'attribute_value' .
-rake TAGS=@AUTO-193
-exit
-ssh rutl014d
-sudo apt-get install fbreader
-vim
-cd code/
-mkdir pragprog
-cd pragprog/
-mkdir practical_vim
-cd practical_vim/
-mv ~/Downloads/dnvim-code.tgz .
-ls
-tar -zxvf dnvim-code.tgz 
-ls
-cd code/
-ls
-mv ./* ..
-ls
-cd ..
-ls
-rm code/
-rm -r code/
-ls
-cd the_vim_way/
-ls
-vim 0_mechanics.txt 
-ssh rutl014d
-;E
-vim
-cd code/
-ls
-cd mi_automation/
-svn up
-ls
-cd features/
-ls
-cd manual/
-ls
-cd bdp/
-ls
-cd pubsys/
-ls
-cd ..
-ls
-cd content_sharing/
-ls
-cd ..
-ls
-cd pubsys/
-ls
-cd story/
-ls
-ls -al
-vim .
-svn log -r {2013-05-10}:{2013-05-14}
-svn log -r {2013-05-06}:{2013-05-14}
-cd
-cd code/mi_automation/
-svn up
-ls
-cd features/
-ls
-cd manual/
-ls
-cd bdp/
-ls
-cd pubsys/
-ls
-media/
-ls
-cd media/
-ls
-vim image_high_ascii.feature 
-crucible_upload --name "Feature files for MIDEV-10694" --reviewer dodom --file image_high_ascii.feature --file add_image.feature 
-cd
-cd code/mi_automation/
-ls
-crucible_upload --name "Feature files for MIDEV-10694" --reviewer dodom --file features/manual/bdp/pubsys/media/image_high_ascii.feature --file features/manual/bdp/pubsys/media/add_image.feature 
-ssh rutl014d
-which java
-java -version
-ssh rutl014d
-cd code/
-cd mi_automation/
-svn up
-svn status
-svn ci -m "Changes for the AP Webfeed image feature files." features/manual/bdp/pubsys/media/image_high_ascii.feature features/manual/bdp/pubsys/media/add_image.feature 
-cd
-ssh WHB
-cd .ssh/
-ls
-vim config 
-cd
-sudo apt-get install maven
-which maven
-which mvn
-mvn
-cd Downloads/
-ls
-ls -lart
-mv dfp-axis-examples-1.15.1-dependencies.tar.gz ../code/
-ls -lart
-cd ..
-ls
-cd code/
-ls
-tar -xzvf dfp-axis-examples-1.15.1-dependencies.tar.gz 
-ls
-mkdir DFP
-mv dfp-axis-examples-1.15.1-dependencies.tar.gz DFP/
-ls
-cd DFP/
-ls
-tar -xzvf dfp-axis-examples-1.15.1-dependencies.tar.gz 
-ls
-mv ~/Downloads/dfp-axis-examples-1.15.1.tar.gz .
-ls
-mkdir example
-rm ./*.jar
-ls
-rm README.dependencies 
-ls
-mkdir deps
-ls
-mv dfp-axis-examples-1.15.1-dependencies.tar.gz deps/
-ls
-mv dfp-axis-examples-1.15.1.tar.gz example/
-ls
-cd example/
-ls
-tar -xzvf dfp-axis-examples-1.15.1.tar.gz 
-ls
-cd dfp-examples/
-ls
-cd dfp_axis/
-ls
-vim
-mvn -X compile
-ls
-mvn -X exec:java -Dexec.mainClass="dfp.axis.v201204.GetAllNetworks"
-java -Dexec.mainClass="dfp.axis.v201204.GetAllNetworks"
-ls
-vim request.log 
-im
-vim
-mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.companyservice.CreateCompanies"
-mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.userservice.GetAllUsers"
-mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.companyservice.CreateCompanies"
-mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.companyservice.CreateCompanies"ls
-ls
-rm -rf target/
-ls
-mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.userservice.GetAllUsers"
-mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.companyservice.CreateCompanies"
-ls
-mvn -X compile
-[A
-mvn -X compile
-mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.userservice.GetAllUsers"
-mvn -X compile
-mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.userservice.GetAllUsers"
-mvn -X clean compile
-mvn -X exec:java -Dexec.mainClass="dfp.axis.v201302.userservice.GetAllUsers"
-ls
-cd src/
-ls
-cd main/
-ls
-cd java/
-ls
-cd dfp/
-ls
-cd axis/
-ls
-cd v201302/
-ls
-mkdir userservice
-ls
-cd ..
-ls
-cd v201204/
-ls
-vim
 ssh rutl014d
 cd
 cd .m2/
@@ -1998,3 +906,1095 @@ cd weekly_report_script/
 ls
 python test_sqlite.python
 vim
+ssh rutl014d
+cd code/mi_automation/
+cd features/
+ls
+cd automated/
+ls
+cd aurora/
+ls
+cd detail_pages/
+ls
+cd ../site_live_page_content/
+ls
+vim upickem_vendor.feature 
+vim
+tmux 
+cd
+cd code/python/
+ls
+rm weekly_report_script/
+rm -rf weekly_report_script/
+ls
+git clone https://github.com/technopoetic/ep_report.git
+ls
+cd ep_report/
+ls
+python everpad_weekly_report.py 
+pip install beautifulsoup4
+sudo pip install beautifulsoup4
+python everpad_weekly_report.py 
+ssh rutl014d
+ssh rutl014d
+gem list
+gem dependency google-dfp-api
+rvm list
+rvm use ruby-1.8.7-p371
+gem dependency google-dfp-api
+gem dependency google-ads-common
+gem dependency httpi
+gem dependency savon
+gem dependency signet
+gem list
+gem query --remote
+gem list
+gem specification google-dfp-api
+gem specification google-ads-common
+gem list
+cd code/ruby_rails/
+ls
+cd dfp_audit_report/
+ls
+vim get_all_user
+ls
+vim get_all_users.rb 
+ll
+git status
+vim get_all_users.rb 
+ssh rutl014d
+ls
+ssh rutl014d
+ssh rbip002p
+ssh rbip002p.nandomedia.com
+which everpad
+everpad
+ssh rutl014d
+sh rutl014d
+ssh rutl014d
+ssh rutl008d
+ssh rutl008d.nandomedia.com
+ssh rutl014d
+jconsole
+ssh rutl014d
+history | grep scp
+scp rutl014d:/nm/home/staff/rhibbitts/tmp/ap_feeds/minewsroom_ap_spanish_online.yml /home/rhibbitts/Downloads/
+ls Downloads/
+ssh rutl014d
+ssh rbip000t
+hdbq qa1
+ssh rutl014d
+tmux attach
+ssh rutl014d
+cd
+perl -e 'print $string ||= '';'
+perl -e 'print $string ||= "";'
+perl -e '$string ||= ""; print "String is: $string";'
+perl -MData::Dumper -e '@string ||= (); print "String is:", Dumper($string), "\n";'
+perl -MData::Dumper -e '\@string ||= (); print "String is:", Dumper($string), "\n";'
+perl -MData::Dumper -e '@string ||= ""; print "String is:", Dumper($string), "\n";'
+perl -MData::Dumper -e '%string; print $string{foo};'
+perl -MData::Dumper -e '%string; Dumper(print $string{foo});'
+perl -MData::Dumper -e '%string; $var = $string{foo); print $var;'
+perl -MData::Dumper -e '%string; $var = $string{foo}; print $var;'
+perl -MData::Dumper -e '%string; $var = $string{foo}; print ref $var;'
+perl -MData::Dumper -e '%string; $var = ref $string{foo}; print $var;'
+history | grep scp
+scp rutl014d:/nm/home/staff/rhibbitts/tmp/webfeed_mapping /home/rhibbitts/Downloads/
+cd code/mi_automation/
+ls
+svn up
+cd features/manual/bdp/pubs
+cd features/manual/bdp/pubsys/
+vim
+ssh rutl014d
+ssh 66.216.81.130
+python
+cat /proc/cpuinfo
+/proc/meminfo
+sudo /proc/meminfo
+cat /proc/meminfo
+cat /proc/net/dev
+ssh rutl014d
+ssh rutl009d
+ssh rutl009d.nandomedia.com
+cd codegolf/
+ls
+python diamonds1.py 
+ssh rutl014d
+cd code/
+ls
+cd python/
+ls
+vim
+python diamonds1.py 
+ruby
+irb
+cd Downloads/
+ls
+mkdir AP_unpublished
+cd AP_unpublished/
+scp rhibbitts@rbip000t.nandomedia.com:/nm/local/var/log/dist_services/batch_data_processor/QASiteThree_3/qasite3_ap_online_bdp.log.20130629_155623.gz /home/rhibbitts/Downloads/AP_unpublished/
+scp rhibbitts@rbip000t.nandomedia.com:/nm/local/var/log/dist_services/batch_data_processor/QASiteThree_3/qasite3_ap_online_bdp.log.20130630_183123.gz /home/rhibbitts/Downloads/AP_unpublished/
+scp rhibbitts@rbip001t.nandomedia.com:/nm/local/var/log/dist_services/batch_data_processor/QASiteThree_3/qasite3_ap_online_bdp.log.2013*.gz /home/rhibbitts/Downloads/AP_unpublished/
+scp rhibbitts@rbip001t.nandomedia.com:/nm/local/var/log/dist_services/batch_data_processor/QASiteThree_3/qasite3_ap_online_bdp.log.2013*062.gz /home/rhibbitts/Downloads/AP_unpublished/
+scp rhibbitts@rbip001t.nandomedia.com:/nm/local/var/log/dist_services/batch_data_processor/QASiteThree_3/qa
+scp rhibbitts@rbip013t.nandomedia.com:/nm/local/var/log/dist_services/batch_data_processor/QASiteThree_3/qasite3_ap_online_bdp.log.2013*062.gz /home/rhibbitts/Downloads/AP_unpublished/
+scp rhibbitts@rbip013t.nandomedia.com:/nm/local/var/log/dist_services/batch_data_processor/QASiteThree_3/qasite3_ap_online_bdp.log.2013062*.gz /home/rhibbitts/Downloads/AP_unpublished/
+zgrep
+zgrep 7e5c39e7c59a45e180a00d8dee72fa91 *
+zgrep 647d507da260462ebe255b3e797920ad *
+cd
+cd code/mi_automation/
+svn up
+vim
+ssh rutl014d
+scp rhibbitts@rutl014d:/nm/home/staff/rhibbitts/codebase/sitemgr-config/production/sites/MINewsroom/minewsroom_bdp_ap_online.yml Downloads/
+ssh rutl014d
+scp rhibbitts@rutl014d:/nm//home/staff/rhibbitts/codebase/sitemgr-config/production/sites/MINewsroom/minewsroom_bdp_ap_online.yml code/AP_webfeeds/
+cd code/mi_automation/
+svn up
+bundle install
+ls
+cd features/manual/bdp/pubsys/media/image_order.feature
+cd features/manual/bdp/pubsys/media/
+ls
+vim
+cd
+cd code/
+ls
+mkdir tools
+cd tools/
+ls
+git clone https://github.com/dfdeshom/solr-loganalyzer.git
+ls
+cd ../solr_construct/
+ls
+cd QA/
+ls
+cd logs_from_dev/
+ls
+python ~/code/tools/solr-loganalyzer/loganalyzer.py solr-request.log 
+ls
+cd ../..
+cd ..
+ls
+cd tools/
+cd solr-loganalyzer/
+ls
+python loganalyzer.py ~/code/solr_construct/QA/logs_from_dev/solr-request.log 
+ls
+cd
+ls
+ssh rutl014d
+cd code/
+vimdiff everpad_formatting_correct everpad_formatting_after_open 
+ssh rutl014d
+vim
+ssh rutl014d
+cd Downloads/
+ls
+cd solr/
+ls
+mkdir 2013-07-10-1303
+cd 2013-07-10-1303/
+l
+ls
+scp rslr001t.nandomedia.com:/nm/local/var/solr/logs/* .
+ssh rutl014d
+dbq solr
+hdbq solr
+ssh rutl014d
+cd Downloads/solr/
+ls
+cd 2013-07-10-1303/
+ls
+mkdir qa
+mv solr* qa/
+ls
+mkdir rhibbitts
+cd rhibbitts/
+scp rslr009d.nandomedia.com:/nm/local/var/solr/logs/* .
+ssh rutl014d
+cd code/
+ls
+mkdir scratch
+cd scratch/
+scp rutl014d:/nm/home/staff/rhibbitts/codebase/pubsys-trunk/lib/perl/NM/PubSys/Processor/Plugin/BDS/PreProcessor/NITF.pm
+scp rutl014d:/nm/home/staff/rhibbitts/codebase/pubsys-trunk/lib/perl/NM/PubSys/Processor/Plugin/BDS/D
+scp rutl014d:/nm/home/staff/rhibbitts/codebase/pubsys-trunk/lib/perl/NM/PubSys/Processor/Plugin/BDS/PreProcessor/WebFeed.pm .
+scp rutl014d:/nm/home/staff/rhibbitts/bdp/ap_online/archive/* .
+scp rutl014d:/nm/home/staff/rhibbitts/bdp/ap_online/archive/201307* .
+scp rutl014d:/nm/home/staff/rhibbitts/bdp/ap_online/archive/webfeed_fetch-201307* .
+ls
+tar -xvf webfeed_fetch-20130*
+ls
+grep -r '<a href' *.xml
+grep -r '<a href' 
+grep -r '<a href' .
+grep -r '<a href' */*.xml
+grep -r '<a href' **/*.xml
+cd webfeed_fetch-201307
+ls
+cd webfeed_fetch-20130701_005907.trigger/
+ls
+grep 'a href' .
+grep 'a href' *.xml
+grep href *.xml
+vim wf_3721a8b2e2174e9b9720c3bc90455e75_bx.xml 
+cd code/scratch/webfeed_fetch-20130701_005907.trigger/
+vim wf_3721a8b2e2174e9b9720c3bc90455e75_bx.xml 
+grep 'http' *.xml
+exit
+ssh rutl014d
+cd Downloads/
+scp rhibbitts@rbip006p.nandomedia.com:/nm/local/var/log/dist_services/batch_data_processor/MINewsroom_55/ap_online.log.20130718_112624.gz .
+ls
+mkdir AP_testing
+mv ap_online.log.20130718_112624.gz AP_testing/
+cd AP_testing/
+ls
+gunzip ap_online.log.20130718_112624.gz 
+ls
+vim ap_online.log.20130718_112624 
+ll
+cd Downloads/
+ls
+cd AP_testing/
+ls
+scp rutl014d:/nm/home/staff/rhibbitts/codebase/sitemgr-config/production/sites/MINewsroom/minewsroom_bdp_ap_online.yml .
+vim minewsroom_bdp_ap_online.yml 
+ls
+vim minewsroom_bdp_ap_online.yml 
+vim minewsroom_bdp_ap_sports.yml 
+vim Downloads/AP_testing/minewsroom_bdp_ap_sports.yml 
+ssh rutl014d
+cd Downloads/
+ls
+cd AP_testing/
+ls
+vim minewsroom_bdp_ap_sports.yml 
+svn --help
+svn help merge
+ssh rutl014d
+sh rutl014d
+ssh rutl014d
+tmux attach
+ssh rutl014d
+vim /home/rhibbitts/.bashrc 
+vim /home/rhibbitts/.bash_profile 
+sudo apt-get install kicad
+ssh rutl014d
+SSH RUTL014D
+ssh rutl014d
+ssh rult014d
+ssh rutl014d
+ls
+cd code/
+ls
+cd mi_automation/
+ls
+svn up
+vim features/manual/welcome_page.feature 
+vim features/manual/aurora/welcome_page.feature 
+tmux
+ssh rutl014d
+tmux
+cd code/mi_automation/
+vim
+ls
+ll
+cd features/manual/
+ls
+ll
+cd aurora/
+ls
+ll
+cd ads/
+ls
+cd ..
+ls
+cd features/
+ls
+cd manual/
+ls
+cd ads/
+ls
+cd ..
+ls
+cp welcome_page.feature ads/welcome_page_look_feel.feature
+ls ads/
+rm welcome_page.feature 
+mv aurora/welcome_page.feature ads/welcome_page_funct.feature
+ls aurora/
+ls ads/
+cd ads/
+ls
+cd ..
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-12795
+bundle install
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-12795
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-12425
+svn revert -R .
+svn up
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-12425
+bundle install
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-12425
+rake ENVIRONMENT=qasite4 TAGS=@smoke_test
+ls
+cd features/
+cd manual/
+ls
+mv aurora/welcome_page.feature ads/
+ls ads/
+rm ads/welcome_page.feature 
+ls ads/
+ls
+rm welcome_page.feature 
+ls
+ls aurora/
+cd ads/
+ls
+rm welcome_page_look_feel.feature 
+mv welcome_page_funct.feature welcome_page.feature
+ls
+cd
+cd code/mi_automation/
+svn status
+svn add features/manual/ads/welcome_page.feature 
+svn status
+svn del features/manual/welcome_page.feature
+svn del features/manual/aurora/welcome_page.feature
+svn status
+svn ci -m "Consolidated welcome."
+svn up
+svn status
+svn ci -m "Consolidated welcome page manual Scenarios into one feature file."
+sudo apt-get install pan
+ssh rutl014d
+#
+ssh rutl014d
+cd
+ssh rutl014d
+everpad
+exit
+cd
+ls
+cd bin/
+ls
+cd
+cd code/mi_automation/
+ls
+svn up
+svn status
+crucible_upload --name "Feature file updates for MIDEV-12655" --reviewer dodom --reviewer mganapathy
+sudo apt-get autoclean
+sudo apt-get autoremove
+sudo apt-get update
+sudo add-apt-repository ppa:nvbn-rm/ppa
+sudo apt-get update
+which git
+cd ..
+ls
+sudo apt-get build-dep everpad
+git clone git://github.com/nvbn/everpad.git everpad-git
+cd everpad-git/
+ls
+ll
+grep -r "Create Note" *
+killall everpad everpad-provider everpad-lens
+everpad-provider --verbose
+exit
+vim
+svn status
+svn ci -m "Updated feature files for MIDEV-12655"
+vim
+cd ../everpad-git/
+vim
+exit
+cd code/
+ls
+cd mi_automation/
+ls
+grep -r syncronex *
+grep -r press_plus *
+vim
+tmux
+svn status
+exit
+ssh rutl014d
+cd code/Android/android-studio/bin/
+ls
+./studio.sh 
+which jdk
+which java
+java -version
+update-alternatives --config java
+cd /usr/lib/jvm/
+ls
+cd jdk1.7.0_21/
+ls
+which javac
+cd /etc/
+sudo touch /etc/udev/rules.d/51-android.rules
+vim /etc/udev/rules.d/51-android.rules
+sudo vim /etc/udev/rules.d/51-android.rules
+sudo chmod a+r /etc/udev/rules.d/51-android.rules
+lsusb
+sudo vim /etc/fuse.conf 
+sudo vim /etc/group
+lsusb
+sudo apt-get install android-udev
+sudo udevadm control --reload-rules
+adb devices
+sudo apt-get install android-tools-adb
+adb devices
+cd
+cd code/
+ls
+cd Android/
+git clone https://github.com/nerdability/AndroidRssReader.git AndroidRssReader
+ls
+cd 
+cd AndroidStudioProjects/
+ls
+mkdir LazyList
+mv LazyList/ LaxyListProject
+cd LaxyListProject/
+cd ..
+rm LaxyListProject/
+rm -rf LaxyListProject/
+git clone https://github.com/thest1/LazyList.git LazyListProject
+ssh rutl014d
+cd code/Android/android-studio/
+ls
+cd bin/
+ls
+./studio.sh 
+ssh rutl014d
+exo-desktop-item-edit --create-new ~/.local/share/applications
+cd code/Android/android-studio/
+cd bin/
+ls
+./studio.sh 
+ls -al
+cd Desktop/
+ls
+cp Android\ Studio.desktop ~/.local/share/applications/
+ls
+cd ~/.local/share/applications/
+ls
+cd AndroidStudioProjects/
+ls
+cd SimpleRssReaderProject/
+ls
+git init
+git add .
+git status
+git commit -m "Initial Commit of a working RSS reader for News & Observer.com"
+git status
+git add .
+git status
+git commit -m "Working model with in-app WebView of content.  Getting ready to add image support."
+adb logcat
+ssh rutl014d
+cd code/
+ls
+cd ..
+ls
+cd Projects/
+ls
+cd ../test/
+ls
+cd java/
+ls
+cd com/
+ls
+cd mcclatchyinteractive/
+ls
+cd DFPAuditReport/
+ls
+ll
+cd ..
+ls
+cd ..
+ls
+cd Dropbox/
+ls
+cd MI/
+ls
+cd ..
+ls
+cd tuts/
+ls
+cd ..
+ls
+cd
+ll
+mkdir Java_Apps
+cd Java_Apps/
+cp ~/Downloads/idea-IC-129.713/ .
+cp -r ~/Downloads/idea-IC-129.713/ .
+ls
+cd idea-IC-129.713/
+ls
+cd bin/
+ls
+./idea.sh 
+which javac
+history | grep alternatives
+update-alternatives --config java
+vim
+s
+cd bin/
+ls
+./idea.sh 
+ssh rutl014d
+vim /home/rhibbitts/.bashrc 
+source ~/.bashrc 
+srutl
+cd code/mi_automation/
+svn up
+bundle install
+ls
+cd features/
+ls
+cd manual/
+ls
+cd feeds/
+ls
+vim spreed.feature 
+tmux
+cd ~/code/mi_automation/features/automated/feeds/
+ls
+vim spreed.feature 
+ls
+cd ..
+ls
+cd step_definitions/
+grep "I publish 1 story to a section" *
+grep "I publish \d story to a section" *
+grep "story to a section" *
+grep 'section' *
+grep 'I publish ' *
+grep 'Given an ' *
+grep 'Given' *
+ls
+history | grep RAKE
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-10411
+cd ~/code/mi_automation/
+svn up
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-10411
+bundle install
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-10411
+bundle install
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-10411
+grep -r Classic *
+srutl
+cd code/mi_automation/
+ls
+cd features/
+ls
+cd automated/support/
+ls
+cd configs/
+ls
+vim
+tmux als
+tmux ls
+tmux
+srutl
+tmux attach
+grep -ri classic *
+grep -ri aurora *
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-10411
+grep -ri AuroraStorySectionFrontPage *
+grep -ri section front *
+grep -ri 'section front' *
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-10411
+grep 'I publish .* to a section' *
+grep -r 'I publish .* to a section' *
+grep -r 'I publish .* to a section' *.rb
+grep -r 'I publish .* to a section' --include *.rb
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-10411
+grep -r 'spreed' --include *.rb
+grep -r 'spreed' --include *.feature
+grep -r 'spreed' *
+cd ..
+grep -r 'spreed' *
+svn status
+svn diff automated/step_definitions/navigation_steps.rb 
+grep -r 'create .* section' *
+cd automated/
+grep -r 'create .* section' *
+ls
+cd aurora/
+ls
+cd section_front/
+ls
+grep -r 'create .* section' *
+ls
+cd ..
+ls
+cd ..
+grep -r 'navigate to the last blog post' *
+ls
+grep -r 'navigate to the last' *
+grep -r 'section id' *
+grep -r 'create .* section' *
+grep -r 'create .* section' --include *.rb
+grep -r 'create .* section' --include *.feature
+grep -r 'create .* section' --include *
+grep -r 'create .* section' *
+history | grep rake
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-10411
+ls
+cd support/
+ls
+cd pages/
+ls
+cd aurora/
+ls
+cd ..
+cd .
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+grep -ri 'create .* section' --include *.rb
+grep -ri 'publish .* section' --include *.rb
+srutl
+tmux attach
+tmux
+ls
+history | grep rake
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-10411
+rake ENVIRONMENT=qasite4 TAGS=@rmh
+grep -r breakpoint *
+rake ENVIRONMENT=qasite4 TAGS=@rmh
+grep -r matches *
+ls
+cd support/
+ls
+cd mi/
+ls
+cd asset/
+ls
+cd ..
+grep -ri api *
+grep -ri api --include *.feature
+grep -ri api --include *\.feature
+grep -ri api --include *.feature
+grep -ri the JSON for the last blog post matches the last blog post detail' *
+ls
+grep -ri the JSON for the last blog post matches the last blog post detail'
+grep -ri 'the JSON for the last blog post matches the last blog post detail' *
+grep -ri 'verify_asset_json_page' *
+grep -ri 'AuroraBase' *
+cd code/mi_automation/
+ls
+cd features/
+cd automated/
+vim
+tmux attach
+tmux
+cd code/mi_automation/features/
+history | grep rake
+rake ENVIRONMENT=qasite4 TAGS=@rmh
+cd automated/
+grep -ri 'lorem ipsum' *
+cd code/mi_automation/features/
+cd automated/
+ls
+vim
+exit
+tmux
+history | grep rake
+rake ENVIRONMENT=qasite4 TAGS=@rmh
+rvm gemdir
+rvm gem install differ
+rvm all do gem install differ
+cd ..
+ls
+cd ..
+ls
+bundle install
+bundle show differ
+cd features/automated/
+rake ENVIRONMENT=qasite4 TAGS=@rmh
+#
+rake ENVIRONMENT=qasite4 TAGS=@rmh
+grep 
+grep -r 'link to url' *
+rake ENVIRONMENT=qasite4 TAGS=@rmh
+grep -r 'AssetBase' *
+grep -r 'link_to_url' *
+grep -r 'guid' *
+rake ENVIRONMENT=qasite4 TAGS=@rmh
+cd code/mi_automation/features/automated/
+vim
+tmux
+srutl
+which luke
+ls
+cd Java_Apps/
+ls
+cd ..
+ls
+cd Downloads/
+ls
+rm AP_testing/
+rm -rf AP_testing/
+rm -rf AP_unpublished/
+rm APTOPIX\ Kentucky\ Derb_Krei.xml 
+rm BC*.xml
+ls
+cd BC*.anpa
+rm BC*.anpa
+ls
+rm doc20130826155939.tif 
+rm dfp_api_python_9.7.0*
+ls
+rm dupes.csv 
+rm histogram.csv 
+rm kwalify-0.7.2.gem 
+rm learn_puppet_centos_pe2.7.0_ovf.2013.01.07.zip 
+rm McClatchy*
+ls
+rm minewsroom_*
+rm MyAccountBalances2013.08.28.13.44.32.csv 
+rm queryTime.csv 
+rm RaleighSkyline.*
+rm Screen\ shot\ 2013-08-05\ at\ 1.*
+ls
+rm solarized.zip 
+rm spreed-extensions-with-mrss.xml 
+rm themeforest-113414-the-architect-wp-edition.zip 
+rm -rf ZSI-2.1-a1*
+ls
+ll
+rm -rf ZSI-2.1-a1/
+ls
+java -jar lukeall-3.5.0.jar 
+history | grep rake
+rake ENVIRONMENT=qasite4 TAGS=@rmh
+svn status
+crucible_upload --name "Spreed Automation - MIDEV-13017" --reviewer dodom --reviewer mganapathy --reviewer mfoster 
+cd ..
+svn status
+svn revert Gemfile.lock 
+svn status
+crucible_upload --name "Spreed Automation - MIDEV-13017" --reviewer dodom --reviewer mganapathy --reviewer mfoster 
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-130127
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-13017
+rake ENVIRONMENT=qasite4 TAGS=@rmh
+svn status
+svn up
+svn status
+svn ci -m "Added automated scenarios for Spreed." features/automated/step_definitions/aurora_feed_steps.rb features/automated/feeds/spreed.feature 
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-13017
+bundle install
+rake ENVIRONMENT=qasite4 TAGS=@MIDEV-13017
+cd ..
+svn status
+svn diff features/automated/support/env.rb 
+svn diff features/automated/step_definitions/navigation_steps.rb 
+svn revert features/automated/step_definitions/navigation_steps.rb 
+svn status
+svn revert features/manual/feeds/spreed.feature 
+svn status
+svn diff features/automated/support/env.rb 
+svn revert features/automated/support/env.rb 
+svn status
+rm MIDEV-12130_upickem.patch 
+svn status
+rm MIDEV_11778.patch 
+svn status
+svn revert Gemfile
+svn status 
+svn revert Gemfile.lock 
+svn status
+crucible_upload --name "MIDEV-13017, Spreed automation"
+srutl
+exit
+srutl
+tmux
+ls
+cd code/
+ls
+ll
+cd python/
+ls
+ll
+cd ep_report/
+ll
+cd ..
+cd ep_report/
+ll
+vim everpad_weekly_report.py 
+ls
+vim solr_multi_search.py 
+srutl
+tmux
+python
+ls
+python solr_multi_search.py -i 2013-02-01 -o 2013-02-15
+python solr_multi_search.py -s 2013-02-01 -e 2013-02-15
+python solr_multi_search.py -s 2013-08-28 -e 2013-09-02
+python solr_multi_search.py -s 2013-08-26 -e 2013-09-02
+python solr_multi_search.py -s 2013-08-01 -e 2013-09-03
+python solr_multi_search.py -s 2013-08-01 -e 2013-09-03 -c rockhillherald
+python solr_multi_search.py -s 2013-08-01 -e 2013-09-03 --core rockhillherald
+python solr_multi_search.py -s 2013-08-01 -e 2013-09-03 -c rockhillherald
+python solr_multi_search.py -s 2013-08-01 -e 2013-09-03 -c "rockhillherald"
+python solr_multi_search.py -s 2013-05-01 -e 2013-09-03 -c "rockhillherald"
+python solr_multi_search.py -s 2013-07-01 -e 2013-09-03
+python solr_multi_search.py -s 2013-07-01 -e 2013-09-03 -f
+python solr_multi_search.py -s 2013-05-01 -e 2013-09-03 -f
+ls
+cd
+ls
+cd /
+ls
+cd
+ls
+cd code/python/
+ls
+cd solr_reporting/
+ll
+ls
+cd code/python/
+ls
+cd solr_reporting/
+ls
+tmux
+srutl
+tmux
+cd code/python/solr_reporting/
+ls
+mv solr_multi_search.py weasl.py
+vim
+srutl
+tmux
+cd code/python/solr_reporting/
+ls
+git init
+git status
+git add weasl.py
+git remote add origin https://github.com/technopoetic/weasl.git
+git push
+git status
+git commit -m Initial commit
+git commit -m "Initial commit"
+git push
+git pull
+git status
+git push
+git pull
+ll
+rm -rf .git/
+ls
+ll
+git clone https://github.com/technopoetic/weasl.git
+ls
+mv weasl.py weasl
+ls
+git status
+cd weasl/
+ll
+git status
+git add weasl.py
+git status
+git commit -m "Initial Commit"
+git push
+srutl
+history | grep scp
+scp rhibbitts@rslr000t.nandomedia.com:/nm/local/var/solr/logs/solr-stderrout.log /home/rhibbitts/Downloads/
+srutl
+tmux attach
+srutl
+cd
+cd dotfiles/vim/.vim/bundle/
+ll
+cd
+cd code/python/
+ls
+cd solr_reporting/
+ls
+cd weasl/
+python weasl.py -h
+python weasl.py -m ec_event_id%3A%5B*+TO+*%5D
+python weasl.py -m ec_event_end_dt%3A%5B*+TO+*%5D
+python weasl.py -m movies_movie_id%3A%5B*+TO+*%5D
+cd
+cd dotfiles/vim/.vim/
+ls
+cd bundle/
+git clone https://github.com/majutsushi/tagbar.git
+ls
+srutl
+cd dotfiles/
+ls
+cd vim/
+ll
+cd .vim/
+ls
+ll
+cd bundle/
+ll
+git status
+cd ctrlp/
+ll
+cd ..
+ls
+cd nerdtree/
+ll
+cd ..
+git clone https://github.com/tpope/vim-cucumber.git
+ll
+vim
+cd
+cd code/mi_automation/
+svn up
+bundle install
+vim
+echo $XDG_CONFIG_HOME
+cd 
+cd /usr/share/applications/
+ll
+cd ..
+ll
+cd xfce4
+ls
+cd ..
+cd xfcemint/
+ll
+cd xdg-gdm/
+ls
+cd xfce4/
+ls
+cd xfconf/
+ls
+cd ..
+ls
+cd /usr/share/applications
+ll
+sudo vim cisco-anyconnect.desktop 
+vim
+echo $XDG_CONFIG_DIRS
+cd /etc/xdg/
+ls
+cd menus/
+ls
+cd applications-merged/
+ls
+cd ..
+ls
+cd ..
+ls
+cd xfce4/
+ls
+cd ..
+ls
+vim user-dirs.conf user-dirs.defaults 
+ls
+cd menus/
+ls
+vim applications.menu xfce-applications.menu 
+echo $XDG_CONFIG_DIRS
+echo $XDG_DATA_DIRS
+cd /usr/share/defoma/
+cd ..
+cd /usr/local/share/
+ls
+echo $XDG_DATA_DIRS
+echo $XDG_CONFIG_DIRS
+cd /etc/xdg/
+ls
+cd menus/
+ls
+cd applications-merged/
+ll
+sudo vim cisco-anyconnect.menu 
+cd
+cd code/
+cd python/
+ls
+cd solr_reporting/
+ll
+mv weasl/ ..
+ls
+mv ./* ../weasl/
+ls
+cd ..
+ls
+rm -r solr_reporting/
+ls
+cd weasl/
+ll
+git status
+vim
+ls
+cd ..
+ll
+cd weasl/
+ll
+git status
+git add .
+git status
+git commit -m "Added gitignore for report output."
+git push
+cd
+cd .ssh/
+ls
+cat id_rsa_laptop.pub 
+cd
+cd code/python/weasl/
+ll
+cd .git/
+ll
+vim config 
+cd ..
+git remote set-url origin git@github.com:technopoetic/weasl.git
+git status
+git push
+ssh -vT git@github.com
+ls ~/.ssh/
+ssh-add -l ~/.ssh/id_rsa_laptop
+ssh-add -l
+ssh-add ~/.ssh/id_rsa_laptop
+git push
+git pull
+git status
+git log
+git push
+vim
+tmux
+cd code/python/weasl/
+ll
+weal.py
+python weasl.py 
+tmux
+vim
+python weasl.py -m meta_id%3A%5B*+TO+*%5D
+ls
+mv config.ini weasl.cfg
+ls
+python weasl.py -m meta_id%3A%5B*+TO+*%5D
+python weasl.py -s 2013-09-08 -e 2013-09-09
+git status
+git add weasl.cfg
+git commit -m "Converted to using config file"
+git pull
+git push
+ssh-add ~/.ssh/id_rsa_laptop
+git push
+srutl
+cd code/
+cd mi_automation/
+tmux
+svn up
+vim
+srutl

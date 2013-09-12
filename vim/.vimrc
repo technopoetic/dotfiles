@@ -88,7 +88,8 @@ set directory^=$HOME/tmp//
 let mapleader = ","
 
 "Toggle the TagList
-nnoremap <silent> <F8> :TlistToggle<CR>
+" nnoremap <silent> <F8> :TlistToggle<CR>
+nnoremap <silent> <F8> :TagbarToggle<CR>
 
 "Enable 'very magic' which makes Vim regex more like python/perl.
 nnoremap / /\v
@@ -157,4 +158,5 @@ function! CleanClose(tosave)
                     endif
                     exe "bd".todelbufNr
                 endfunction
+
 let g:netrw_liststyle=3

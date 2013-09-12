@@ -1,6 +1,6 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/rhibbitts/code/mi_automation/features/automated'
-let g:netrw_dirhist_2='/home/rhibbitts/code/mi_automation/features/automated/aurora'
-let g:netrw_dirhist_3='/home/rhibbitts/code/mi_automation/features/automated/aurora/site_live_page_content'
-let g:netrw_dirhist_4='/home/rhibbitts/code/ruby_rails/dfp_audit_report'
+let g:netrw_dirhist_2='/home/rhibbitts/code/mi_automation/features/automated/feeds'
+let g:netrw_dirhist_3='/home/rhibbitts/code/mi_automation/features/automated/feeds/rss'
+let g:netrw_dirhist_4='/home/rhibbitts/code/mi_automation/features/manual/feeds/rss'
