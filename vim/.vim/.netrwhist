@@ -1,6 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/rhibbitts/code/mi_automation/features/automated'
-let g:netrw_dirhist_2='/home/rhibbitts/code/mi_automation/features/automated/aurora'
-let g:netrw_dirhist_3='/home/rhibbitts/code/mi_automation/features/automated/aurora/site_live_page_content'
-let g:netrw_dirhist_4='/home/rhibbitts/code/ruby_rails/dfp_audit_report'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/etc/xdg/menus/applications-merged'
+let g:netrw_dirhist_2='/etc/xdg/menus'
+let g:netrw_dirhist_3='/etc/xdg'
+let g:netrw_dirhist_4='/etc'
+let g:netrw_dirhist_5='/'
+let g:netrw_dirhist_6='/usr'
+let g:netrw_dirhist_7='/usr/share'
+let g:netrw_dirhist_8='/usr/share/applications'
+let g:netrw_dirhist_9='/etc/xdg/menus/applications-merged'
