@@ -5,9 +5,12 @@ execute pathogen#infect()
 syntax on
 
 set t_Co=256 
+
 if !has("gui_running") 
     set background=dark 
 endif
+colorscheme darktango
+"colorscheme molokai
 
 "Not sure.  I think it allows plugins access to the filetype
 filetype plugin indent on
@@ -36,7 +39,7 @@ set scrolloff=5
 set autoindent
 
 "Turns on a message in the footer that signals INSERT, REPLACE or VISUAL mode.
-set showmode
+set noshowmode
 
 "Shows some information about the current command at the bottom right of the
 "screen.  In Visual mode, shows the size of the selection, either X lines or
@@ -90,7 +93,8 @@ let mapleader = ","
 nnoremap <silent> <F9> :TagbarToggle<CR>
 
 "Toggle the TagList
-nnoremap <silent> <F8> :TlistToggle<CR>
+" nnoremap <silent> <F8> :TlistToggle<CR>
+nnoremap <silent> <F8> :TagbarToggle<CR>
 
 "Enable 'very magic' which makes Vim regex more like python/perl.
 nnoremap / /\v
@@ -113,7 +117,6 @@ nnoremap <leader><space> :noh<cr>
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
 
 "OK, this is controversial, but turning off the arrow keys supposedly makes
 "one 'learn' Vim the right way, i.e. to use hjkl.
@@ -131,9 +134,6 @@ nnoremap k gk
 "remap ; to :, so that I don't have to hold shift every darn time I want to
 "run a command.
 nnoremap ; :
-
-"map NerdTreeToggle
-nmap <silent> <c-n> :NERDTreeToggle<CR>
 
 "remap jj to <ESC> for quicker escaping.  There are no English words that have
 "the characters 'jj'
@@ -159,4 +159,16 @@ function! CleanClose(tosave)
                     endif
                     exe "bd".todelbufNr
                 endfunction
+
 let g:netrw_liststyle=3
+
+let g:notes_directories = ['~/Dropbox/Notes']
+let g:airline_powerline_fonts = 1
+
+"Treat .md files as markdown
+au BufRead,BufNewFile *.md set filetype=markdown
+
+" Minion mappings - Experimental
+:map <Leader>mn :!~/code/Minion/minion note <c-r>=expand("<cword>")<cr>
+:map <Leader>mj :!~/code/Minion/minion journal
+

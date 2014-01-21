@@ -3,5 +3,3 @@
 
 [[ $- == *i* ]] && source ~/.bashrc
 
-source ~/perl5/perlbrew/etc/bashrc
-
