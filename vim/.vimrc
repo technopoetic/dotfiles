@@ -94,6 +94,9 @@ set directory^=$HOME/tmp//
 "Map the Leader to ',' instead of '/'.  Easier to get to.
 let mapleader = ","
 
+"Toggle the TagBar
+nnoremap <silent> <F9> :TagbarToggle<CR>
+
 "Toggle the TagList
 " nnoremap <silent> <F8> :TlistToggle<CR>
 nnoremap <silent> <F8> :TagbarToggle<CR>
@@ -119,7 +122,6 @@ nnoremap <leader><space> :noh<cr>
 set wrap
 set textwidth=120
 set formatoptions=qrn1
-"set colorcolumn=85
 
 "OK, this is controversial, but turning off the arrow keys supposedly makes
 "one 'learn' Vim the right way, i.e. to use hjkl.
@@ -171,4 +173,8 @@ let g:airline_section_b = '%{getcwd()}'
 let g:airline_section_c = '%t'
 
 let g:vim_markdown_initial_foldlevel=1
+let g:airline_powerline_fonts = 1
+
+"Treat .md files as markdown
+au BufRead,BufNewFile *.md set filetype=markdown
 
