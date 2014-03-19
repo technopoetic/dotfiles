@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/rhibbitts/code/mi_automation/features/automated'
-let g:netrw_dirhist_2='/home/rhibbitts/code/mi_automation/features/automated/feeds'
-let g:netrw_dirhist_3='/home/rhibbitts/code/mi_automation/features/automated/feeds/rss'
-let g:netrw_dirhist_4='/home/rhibbitts/code/mi_automation/features/manual/feeds/rss'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/rhibbitts/bin'
+let g:netrw_dirhist_2='/home/rhibbitts/.conky'
+let g:netrw_dirhist_3='/home/rhibbitts/.conky/scripts'
+let g:netrw_dirhist_4='/home/rhibbitts/.conky'
+let g:netrw_dirhist_5='/home/rhibbitts'

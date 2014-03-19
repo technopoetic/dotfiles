@@ -103,7 +103,8 @@ if [ -f ~/.bash_aliases ]; then
 fi
 # More aliases:
 alias srutl='ssh rutl014d'
-
+alias ack='ack-grep'
+alias tmux='tmux -2'
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -117,6 +118,7 @@ fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=/home/rhibbitts/bin:$PATH
+PATH=/home/rhibbitts/.local/bin:$PATH
 MANPATH=/home/rhibbitts/man:$MANPATH
 
 export PATH MANPATH

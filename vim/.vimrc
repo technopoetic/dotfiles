@@ -5,12 +5,18 @@ execute pathogen#infect()
 syntax on
 
 set t_Co=256 
-if !has("gui_running") 
-    set background=dark 
+if has('gui_running')
+    set background=light
+else
+    set background=dark
 endif
+" colorscheme solarized
+" let g:molokai_original = 1
+" colorscheme molokai
 
 "Not sure.  I think it allows plugins access to the filetype
 filetype plugin indent on
+set omnifunc=syntaxcomplete#Complete
 
 "Turns off compatibility settings for Vi
 set nocompatible
@@ -36,7 +42,7 @@ set scrolloff=5
 set autoindent
 
 "Turns on a message in the footer that signals INSERT, REPLACE or VISUAL mode.
-set showmode
+set noshowmode
 
 "Shows some information about the current command at the bottom right of the
 "screen.  In Visual mode, shows the size of the selection, either X lines or
@@ -73,17 +79,18 @@ set laststatus=2
 "Show line numbers relative to the cursor.  This is awesome.  The current line
 "number is shown in the status bar, but this shows me how many lines this
 "function covers, or how many lines that block that I want to cut is.
-"set relativenumber
+" set relativenumber
 set number
 
 "This causes Vim to save an undofile, allowing me to 'remember' undos across
 "sessions.
-"set undofile
-"set undodir=~/tmp/
+set undofile
+set undodir=~/tmp/
 
 "Save swapfiles to the tmp dir
 set directory^=$HOME/tmp//
 set directory^=$HOME/tmp//
+
 "Map the Leader to ',' instead of '/'.  Easier to get to.
 let mapleader = ","
 
@@ -110,7 +117,7 @@ nnoremap <leader><space> :noh<cr>
 
 "Set up line wrapping, handle comment formatting, add a colored line at 85px
 set wrap
-set textwidth=79
+set textwidth=120
 set formatoptions=qrn1
 "set colorcolumn=85
 
@@ -130,9 +137,6 @@ nnoremap k gk
 "remap ; to :, so that I don't have to hold shift every darn time I want to
 "run a command.
 nnoremap ; :
-
-"map NerdTreeToggle
-nmap <silent> <c-n> :NERDTreeToggle<CR>
 
 "remap jj to <ESC> for quicker escaping.  There are no English words that have
 "the characters 'jj'
@@ -159,4 +163,12 @@ function! CleanClose(tosave)
                     exe "bd".todelbufNr
                 endfunction
 
+" Uses Tree style NetRW
 let g:netrw_liststyle=3
+
+let g:airline_powerline_fonts = 1
+let g:airline_section_b = '%{getcwd()}'
+let g:airline_section_c = '%t'
+
+let g:vim_markdown_initial_foldlevel=1
+
