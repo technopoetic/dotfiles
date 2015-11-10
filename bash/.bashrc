@@ -92,6 +92,15 @@ alias l='ls -CF'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+# More aliases:
+alias srutl='ssh rutl014d'
+alias ack='ack-grep'
+alias tmux='tmux -2'
+alias tiro='~/code/python/tiro/tiro.py'
+alias t='~/bin/todo.sh'
+
+# Git aliases
+alias gup='git fetch && git rebase -p'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -101,10 +110,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-# More aliases:
-alias srutl='ssh rutl014d'
-alias ack='ack-grep'
-alias tmux='tmux -2'
+export TODOTXT_DEFAULT_ACTION=ls
+complete -D _todo t
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -115,13 +122,14 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+export SCALA_HOME=/opt/scala
+export GOPATH=$HOME/code/golang
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=/home/rhibbitts/bin:$PATH
-PATH=/home/rhibbitts/.local/bin:$PATH
+PATH=$HOME/.local/bin:$HOME/.rvm/bin:$SCALA_HOME/bin:$GOPATH/bin:$PATH
 MANPATH=/home/rhibbitts/man:$MANPATH
 
-export PATH MANPATH
+export PATH MANPATH 
 
 #Set VI mode
 set -o vi
+export ATLAS_TOKEN="YAz9C63cSWrV478VXN7m3N57vY7y6zJ3a8z933sh8bL5JdfNCfDUumrB5152bjJBoks"

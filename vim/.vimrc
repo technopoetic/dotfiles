@@ -6,17 +6,20 @@ syntax on
 
 set t_Co=256 
 if has('gui_running')
-    set background=light
+	set background=light
+	set guifont=Source\ Code\ Pro\ Medium\ 16
+	set formatoptions=l
+	set lbr
 else
-    set background=dark
+	set background=dark
 endif
 " colorscheme solarized
-" let g:molokai_original = 1
-" colorscheme molokai
+let g:molokai_original = 1
+colorscheme molokai
 
-"Not sure.  I think it allows plugins access to the filetype
+"Allows plugins access to the filetype
 filetype plugin indent on
-set omnifunc=syntaxcomplete#Complete
+"set omnifunc=syntaxcomplete#Complete
 
 "Turns off compatibility settings for Vi
 set nocompatible
@@ -31,7 +34,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-"Durh.  Set text encoding to utf-8.
+"Durh.	Set text encoding to utf-8.
 set encoding=utf-8
 
 "Set minimum number of lines to keep on screen below the cursor.  
@@ -51,8 +54,8 @@ set showcmd
 
 "Wildmenu is a VimCommand completion popup.  Wildmode set the way that
 "commands are matched.
-set wildmenu
-set wildmode=list:longest
+"set wildmenu
+"set wildmode=list:longest
 
 "Don't sound the error bell.  Use a visual signal.
 set visualbell
@@ -60,7 +63,7 @@ set visualbell
 "Display a visual highlight on the current line.
 set cursorline
 
-"Signal Vim that we're on a fast terminal.  Since we're working locally, it
+"Signal Vim that we're on a fast terminal.	Since we're working locally, it
 "will do some optimizing to redraw the screen faster.  I wouldn't use this on
 "a remote machine.
 set ttyfast
@@ -68,15 +71,15 @@ set ttyfast
 "Shows cursor position, both absolutely, and relatively, i.e. Top, Bottom, 45%
 set ruler
 
-"This is a list of items, separated by commas.  Each item allows
-"   a way to backspace over something:
+"This is a list of items, separated by commas.	Each item allows
+"	a way to backspace over something:
 set backspace=indent,eol,start
 
 "Set to 2 so that even if we only have 1 window, it still displays the status
 "line
 set laststatus=2
 
-"Show line numbers relative to the cursor.  This is awesome.  The current line
+"Show line numbers relative to the cursor.	This is awesome.  The current line
 "number is shown in the status bar, but this shows me how many lines this
 "function covers, or how many lines that block that I want to cut is.
 " set relativenumber
@@ -88,10 +91,9 @@ set undofile
 set undodir=~/tmp/
 
 "Save swapfiles to the tmp dir
-set directory^=$HOME/tmp//
-set directory^=$HOME/tmp//
+set directory=$HOME/tmp/
 
-"Map the Leader to ',' instead of '/'.  Easier to get to.
+"Map the Leader to ',' instead of '/'.	Easier to get to.
 let mapleader = ","
 
 "Toggle the TagBar
@@ -148,33 +150,50 @@ noremap fc <Esc>:call CleanClose(1)
 noremap fq <Esc>:call CleanClose(0)
 
 function! CleanClose(tosave)
-    if (a:tosave == 1)
-            w!
-        endif
-        let todelbufNr = bufnr("%")
-        let newbufNr = bufnr("#")
-        if ((newbufNr != -1) && (newbufNr != todelbufNr) && buflisted(newbufNr))
-                exe "b".newbufNr
-            else
-                    bnext
-                endif
+	if (a:tosave == 1)
+			w!
+		endif
+		let todelbufNr = bufnr("%")
+		let newbufNr = bufnr("#")
+		if ((newbufNr != -1) && (newbufNr != todelbufNr) && buflisted(newbufNr))
+				exe "b".newbufNr
+			else
+					bnext
+				endif
 
-                if (bufnr("%") == todelbufNr)
-                        new
-                    endif
-                    exe "bd".todelbufNr
-                endfunction
+				if (bufnr("%") == todelbufNr)
+						new
+					endif
+					exe "bd".todelbufNr
+				endfunction
 
-" Uses Tree style NetRW
-let g:netrw_liststyle=3
+" Uses Tree style NetRW - NOTE: buggy as hell
+" let g:netrw_liststyle=3
 
-let g:airline_powerline_fonts = 1
 let g:airline_section_b = '%{getcwd()}'
 let g:airline_section_c = '%t'
-
-let g:vim_markdown_initial_foldlevel=1
 let g:airline_powerline_fonts = 1
 
-"Treat .md files as markdown
-au BufRead,BufNewFile *.md set filetype=markdown
+let g:vim_markdown_initial_foldlevel=1
 
+"Treat .md files as markdown
+"au BufRead,BufNewFile *.md,*.mmd,*.markdown set filetype=markdown
+
+"Some java stuff
+let java_highlight_all=1
+let java_highlight_functions="style"
+let java_allow_cpp_keywords=1
+
+" Created a cool java tag file.  Maybe do this by filetype?
+set tags=~/.tags
+
+" Use xmllint to format xml.
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+
+let g:neocomplete#enable_at_startup = 1
+set completeopt-=preview
+set runtimepath+=~/.vim/vim-snippets
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
