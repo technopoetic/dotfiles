@@ -90,7 +90,7 @@ Jobs="\j"
 # This PS1 snippet was adopted from code for MAC/BSD I saw from: http://allancraig.net/index.php?option=com_content&view=article&id=108:ps1-export-command-for-git&catid=45:general&Itemid=96
 # I tweaked it to work on UBUNTU 11.04 & 11.10 plus made it mo' better
 # Apparently, it works without changes on Fedora 22. (RMH)
-
+. ~/bin/git-prompt.sh
 export PS1=$IBlack$Time12h$Color_Off'$(git branch &>/dev/null;\
 if [ $? -eq 0 ]; then \
   echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
@@ -109,6 +109,17 @@ fi)'
 #############################################################################
 # Custom stuff
 #############################################################################
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -118,7 +129,7 @@ alias ack='ack-grep'
 alias tmux='tmux -2'
 alias tiro='~/code/python/tiro/tiro.py'
 alias t='~/bin/todo.sh'
-alias fbase='git fetch && git rebase -p'
+alias gup='git fetch && git rebase -p'
 alias restart_panel='xfce4-panel --restart'
 alias mcssh='~/code/sources/sshuttle/sshuttle --dns -vvr rhibbitts@ssh.mcclatchyinteractive.com 0/0'
 
