@@ -89,10 +89,9 @@ if ! shopt -oq posix; then
   fi
 fi
 . ~/bin/git-prompt.sh
-export SCALA_HOME=/opt/scala
 export GOPATH=$HOME/code/golang
 
-PATH=$HOME/.local/bin:$HOME/.rvm/bin:$SCALA_HOME/bin:$GOPATH/bin:$PATH
+PATH=$HOME/bin:$HOME/.local/bin:$HOME/.rvm/bin:/usr/local/go/bin:$GOPATH/bin:$PATH
 MANPATH=/home/rhibbitts/man:$MANPATH
 
 export PATH MANPATH 

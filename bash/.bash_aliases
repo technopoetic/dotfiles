@@ -125,7 +125,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 # More aliases:
-alias ack='ack-grep'
+#alias ack='ack-grep'
 alias tmux='tmux -2'
 alias tiro='~/code/python/tiro/tiro.py'
 alias t='~/bin/todo.sh'
