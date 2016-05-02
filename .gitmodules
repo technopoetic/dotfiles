@@ -22,3 +22,6 @@
 [submodule "vim/.vim/bundle/vim-airline"]
 	path = vim/.vim/bundle/vim-airline
 	url = git@github.com:vim-airline/vim-airline.git
+[submodule "vim/.vim/bundle/neocomplete.vim"]
+	path = vim/.vim/bundle/neocomplete.vim
+	url = git@github.com:Shougo/neocomplete.vim.git
