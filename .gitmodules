@@ -1,6 +1,21 @@
 [submodule "vim/.vim/bundle/ultisnips"]
 	path = vim/.vim/bundle/ultisnips
-	url = git://github.com/SirVer/ultisnips.git
+	url = git@github.com:SirVer/ultisnips.git
 [submodule "vim/.vim/vim-snippets"]
 	path = vim/.vim/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "vim/.vim/bundle/vim-go"]
+	path = vim/.vim/bundle/vim-go
+	url = git@github.com:fatih/vim-go.git
+[submodule "vim/.vim/bundle/neocomplete.vim"]
+	path = vim/.vim/bundle/neocomplete.vim
+	url = git@github.com:Shougo/neocomplete.vim.git
+[submodule "vim/.vim/bundle/vim-markdown"]
+	path = vim/.vim/bundle/vim-markdown
+	url = git@github.com:plasticboy/vim-markdown.git
+[submodule "vim/.vim/bundle/vim-autotag"]
+	path = vim/.vim/bundle/vim-autotag
+	url = git@github.com:craigemery/vim-autotag.git
+[submodule "vim/.vim/bundle/tagbar"]
+	path = vim/.vim/bundle/tagbar
+	url = git@github.com:majutsushi/tagbar.git
