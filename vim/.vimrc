@@ -169,7 +169,8 @@ function! CleanClose(tosave)
 
 " Uses Tree style NetRW - NOTE: buggy as hell
 " let g:netrw_liststyle=3
-
+"
+let g:airline_section_a = (mode, crypt, paste, spell, iminsert,branch)
 let g:airline_section_b = '%{getcwd()}'
 let g:airline_section_c = '%t'
 let g:airline_powerline_fonts = 1
@@ -185,7 +186,8 @@ let java_highlight_functions="style"
 let java_allow_cpp_keywords=1
 
 " Tell vim how to look for tags files.
-set tags=./tags,tags;$HOME
+" set tags=./tags,tags;$HOME
+set tags=~/code/tags
 
 " Use xmllint to format xml.
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null

@@ -130,6 +130,8 @@ alias tmux='tmux -2'
 alias tiro='~/code/python/tiro/tiro.py'
 alias t='~/bin/todo.sh'
 alias gup='git fetch && git rebase -p'
+alias glg='git log --graph --pretty=format:"%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)" --abbrev-commit --date=relative'
+alias gl='git log -10 --oneline && echo'
 alias restart_panel='xfce4-panel --restart'
 alias mcssh='~/code/sources/sshuttle/sshuttle --dns -vvr rhibbitts@ssh.mcclatchyinteractive.com 0/0'
 
@@ -143,3 +145,14 @@ alias tmux='tmux -2'
 alias tiro='~/code/python/tiro/tiro.py'
 
 alias t='todo.sh -d /home/rhibbitts/.todo/config'
+
+# Ruby and Rails stuff
+alias be='bundle exec'
+
+# VitalSource environment stuff
+alias jiffy='cd ~/code/vst/jiffy'
+alias phoenix='cd ~/code/vst/phoenix'
+alias goose='cd ~/code/vst/goose'
+alias p2='cd ~/code/vst/p2services'
+alias vst='cd ~/code/vst/vst-models'
+
