@@ -170,9 +170,9 @@ function! CleanClose(tosave)
 " Uses Tree style NetRW - NOTE: buggy as hell
 " let g:netrw_liststyle=3
 "
-let g:airline_section_a = (mode, crypt, paste, spell, iminsert,branch)
-let g:airline_section_b = '%{getcwd()}'
-let g:airline_section_c = '%t'
+let g:airline#extensions#branch#enabled = 1
+" let g:airline_section_b = '%{getcwd()}'
+let g:airline_section_c = '%{getcwd()}/%t'
 let g:airline_powerline_fonts = 1
 
 let g:vim_markdown_initial_foldlevel=1
