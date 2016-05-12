@@ -88,7 +88,6 @@ MANPATH=/home/rhibbit/man:$MANPATH
 
 export PATH MANPATH 
 
-=======
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
