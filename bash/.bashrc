@@ -14,6 +14,8 @@ HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
 shopt -s histappend
+# Append to history file at prompt, then reload new entries.  "Real Time" history updates across terms.
+PROMPT_COMMAND='history -a;history -n'
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
