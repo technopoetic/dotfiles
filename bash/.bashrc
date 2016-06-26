@@ -85,7 +85,7 @@ complete -F _todo t
 # sources /etc/bash.bashrc).
 export GOPATH=$HOME/code/golang
 
-PATH=$HOME/bin:$HOME/.local/bin:/usr/local/go/bin:$GOPATH/bin:$PATH
+PATH=$HOME/bin/google_appengine:$HOME/bin:$HOME/.local/bin:/usr/local/go/bin:$GOPATH/bin:$PATH
 MANPATH=/home/rhibbit/man:$MANPATH
 
 export PATH MANPATH 

@@ -1,6 +1,8 @@
 "This turns on pathogen, the Vim plugin/package manager
 execute pathogen#infect()
 
+" Fix a bug with logipat
+let g:loaded_logipat = 1
 "Turn on syntax highlighting
 syntax on
 
