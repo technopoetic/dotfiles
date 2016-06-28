@@ -174,7 +174,7 @@ function! CleanClose(tosave)
 "
 let g:airline#extensions#branch#enabled = 1
 " let g:airline_section_b = '%{getcwd()}'
-let g:airline_section_c = '%{getcwd()}/%f'
+let g:airline_section_c = '%{getcwd()} : %f'
 " let g:airline_section_c = '%4*\ %<%F%* '
 let g:airline_powerline_fonts = 1
 
@@ -191,6 +191,8 @@ let java_allow_cpp_keywords=1
 " Tell vim how to look for tags files.
 set tags=./tags,tags;$HOME
 " set tags=~/code/tags
+let g:easytags_async=1
+let b:easytags_auto_highlight = 0
 
 " Use xmllint to format xml.
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
