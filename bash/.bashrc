@@ -15,7 +15,8 @@ HISTCONTROL=ignoreboth
 # append to the history file, don't overwrite it
 shopt -s histappend
 # Append to history file at prompt, then reload new entries.  "Real Time" history updates across terms.
-PROMPT_COMMAND='history -a;history -n'
+# This is cool, but it actually gets in the way, when I'm using multiple sessions to do different things.
+#PROMPT_COMMAND='history -a;history -n'
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
@@ -90,13 +91,13 @@ MANPATH=/home/rhibbit/man:$MANPATH
 
 export PATH MANPATH 
 
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
-fi
-. ~/bin/git-prompt.sh
+# if ! shopt -oq posix; then
+#   if [ -f /usr/share/bash-completion/bash_completion ]; then
+#     . /usr/share/bash-completion/bash_completion
+#   elif [ -f /etc/bash_completion ]; then
+#     . /etc/bash_completion
+#   fi
+# fi
+# . ~/bin/git-prompt.sh
 #Set VI mode
 set -o vi
