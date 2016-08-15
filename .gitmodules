@@ -37,3 +37,6 @@
 [submodule "vim/.vim/bundle/lightline.vim"]
 	path = vim/.vim/bundle/lightline.vim
 	url = git@github.com:itchyny/lightline.vim.git
+[submodule "vim/.vim/bundle/indentLine"]
+	path = vim/.vim/bundle/indentLine
+	url = git@github.com:Yggdroot/indentLine.git
