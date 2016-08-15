@@ -3,6 +3,7 @@ execute pathogen#infect()
 
 " Fix a bug with logipat
 let g:loaded_logipat = 1
+
 "Turn on syntax highlighting
 syntax on
 
@@ -15,7 +16,7 @@ if has('gui_running')
 else
     set background=dark
 endif
-" colorscheme solarized
+
 let g:molokai_original = 1
 colorscheme molokai
 
@@ -200,6 +201,7 @@ au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 let g:neocomplete#enable_at_startup = 1
 set completeopt-=preview
 set runtimepath+=~/.vim/vim-snippets
+
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
