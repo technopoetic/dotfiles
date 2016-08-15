@@ -47,7 +47,7 @@ set scrolloff=5
 "line above it.
 set autoindent
 
-"Turns on a message in the footer that signals INSERT, REPLACE or VISUAL mode.
+"Turns off a message in the footer that signals INSERT, REPLACE or VISUAL mode.
 set noshowmode
 
 "Shows some information about the current command at the bottom right of the
@@ -64,7 +64,7 @@ set showcmd
 set visualbell
 
 "Display a visual highlight on the current line.
-" set cursorline
+set cursorline
 
 "Signal Vim that we're on a fast terminal.	Since we're working locally, it
 "will do some optimizing to redraw the screen faster.  I wouldn't use this on
@@ -130,14 +130,14 @@ set formatoptions=qrn1
 
 "OK, this is controversial, but turning off the arrow keys supposedly makes
 "one 'learn' Vim the right way, i.e. to use hjkl.
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+" nnoremap <up> <nop>
+" nnoremap <down> <nop>
+" nnoremap <left> <nop>
+" nnoremap <right> <nop>
+" inoremap <up> <nop>
+" inoremap <down> <nop>
+" inoremap <left> <nop>
+" inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
@@ -173,11 +173,11 @@ endfunction
 " Uses Tree style NetRW - NOTE: buggy as hell
 " let g:netrw_liststyle=3
 "
-let g:airline#extensions#branch#enabled = 1
-" let g:airline_section_b = '%{getcwd()}'
-let g:airline_section_c = '%{getcwd()} : %f'
-" let g:airline_section_c = '%4*\ %<%F%* '
-let g:airline_powerline_fonts = 1
+" let g:airline#extensions#branch#enabled = 1
+" " let g:airline_section_b = '%{getcwd()}'
+" let g:airline_section_c = '%{getcwd()} : %f'
+" " let g:airline_section_c = '%4*\ %<%F%* '
+" let g:airline_powerline_fonts = 1
 
 let g:vim_markdown_initial_foldlevel=1
 
@@ -198,9 +198,10 @@ let b:easytags_auto_highlight = 0
 " Use xmllint to format xml.
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
+let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_at_startup = 1
 set completeopt-=preview
-set runtimepath+=~/.vim/vim-snippets
+set runtimepath+=~/.vim/bundle/vim-snippets
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -336,3 +337,6 @@ endfunction
 let g:unite_force_overwrite_statusline = 0
 let g:vimfiler_force_overwrite_statusline = 0
 let g:vimshell_force_overwrite_statusline = 0
+
+let g:gitgutter_highlight_lines = 1
+let g:gitgutter_sign_column_always = 1
