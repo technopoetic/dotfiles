@@ -1,5 +1,35 @@
 "This turns on pathogen, the Vim plugin/package manager
-execute pathogen#infect()
+" execute pathogen#infect()
+
+"Turns off compatibility settings for Vi
+set nocompatible
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'tpope/vim-fugitive'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'Yggdroot/indentLine'
+Plugin 'itchyny/lightline.vim'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'vim-scripts/tComment'
+Plugin 'godlygeek/tabular'
+Plugin 'majutsushi/tagbar'
+Plugin 'SirVer/ultisnips'
+Plugin 'xolox/vim-easytags'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'fatih/vim-go'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'xolox/vim-misc'
+Plugin 'honza/vim-snippets'
+
+call vundle#end() 
+
+"Allows plugins ac
+filetype plugin indent on
 
 " Fix a bug with logipat
 let g:loaded_logipat = 1
@@ -7,6 +37,7 @@ let g:loaded_logipat = 1
 "Turn on syntax highlighting
 syntax on
 
+"-------------- Color stuff ---------------
 set t_Co=256 
 if has('gui_running')
     set background=light
@@ -20,12 +51,7 @@ endif
 let g:molokai_original = 1
 colorscheme molokai
 
-"Allows plugins ac
-filetype plugin indent on
-"set omnifunc=syntaxcomplete#Complete
 
-"Turns off compatibility settings for Vi
-set nocompatible
 
 "Turns off modelines
 set modelines=0
@@ -149,37 +175,10 @@ nnoremap ; :
 "the characters 'jj'
 inoremap jj <ESC>
 
-noremap fc <Esc>:call CleanClose(1)
-noremap fq <Esc>:call CleanClose(0)
+"------------ MarkDown ------------------
+" let g:vim_markdown_initial_foldlevel=1
+let g:vim_markdown_folding_disabled = 1
 
-function! CleanClose(tosave)
-    if (a:tosave == 1)
-        w!
-    endif
-    let todelbufNr = bufnr("%")
-    let newbufNr = bufnr("#")
-    if ((newbufNr != -1) && (newbufNr != todelbufNr) && buflisted(newbufNr))
-        exe "b".newbufNr
-    else
-        bnext
-    endif
-
-    if (bufnr("%") == todelbufNr)
-        new
-    endif
-    exe "bd".todelbufNr
-endfunction
-
-" Uses Tree style NetRW - NOTE: buggy as hell
-" let g:netrw_liststyle=3
-"
-" let g:airline#extensions#branch#enabled = 1
-" " let g:airline_section_b = '%{getcwd()}'
-" let g:airline_section_c = '%{getcwd()} : %f'
-" " let g:airline_section_c = '%4*\ %<%F%* '
-" let g:airline_powerline_fonts = 1
-
-let g:vim_markdown_initial_foldlevel=1
 
 "Treat .md files as markdown
 "au BufRead,BufNewFile *.md,*.mmd,*.markdown set filetype=markdown
@@ -189,6 +188,7 @@ let java_highlight_all=1
 let java_highlight_functions="style"
 let java_allow_cpp_keywords=1
 
+"--------------- Tags -----------------------
 " Tell vim how to look for tags files.
 set tags=./tags,tags;$HOME
 " set tags=~/code/tags
@@ -198,16 +198,32 @@ let b:easytags_auto_highlight = 0
 " Use xmllint to format xml.
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
+"----------------- NeoComplete ----------------
 let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+
+" Enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+set omnifunc=syntaxcomplete#Complete
 set completeopt-=preview
 set runtimepath+=~/.vim/bundle/vim-snippets
 
+"--------------- UltiSnips ----------------------
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
+"--------------- LightLine --------------------
 let g:lightline = {
             \ 'colorscheme': 'wombat',
             \ 'active': {
@@ -340,3 +356,26 @@ let g:vimshell_force_overwrite_statusline = 0
 
 let g:gitgutter_highlight_lines = 1
 let g:gitgutter_sign_column_always = 1
+
+"------------- CleanClose ---------------
+noremap fc <Esc>:call CleanClose(1)
+noremap fq <Esc>:call CleanClose(0)
+
+function! CleanClose(tosave)
+    if (a:tosave == 1)
+        w!
+    endif
+    let todelbufNr = bufnr("%")
+    let newbufNr = bufnr("#")
+    if ((newbufNr != -1) && (newbufNr != todelbufNr) && buflisted(newbufNr))
+        exe "b".newbufNr
+    else
+        bnext
+    endif
+
+    if (bufnr("%") == todelbufNr)
+        new
+    endif
+    exe "bd".todelbufNr
+endfunction
+
