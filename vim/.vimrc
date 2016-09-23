@@ -15,6 +15,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'itchyny/lightline.vim'
 Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/vimproc.vim'
 Plugin 'vim-scripts/tComment'
 Plugin 'godlygeek/tabular'
 Plugin 'majutsushi/tagbar'
@@ -25,6 +26,9 @@ Plugin 'fatih/vim-go'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'xolox/vim-misc'
 Plugin 'honza/vim-snippets'
+Plugin 'Konfekt/FastFold'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
 
 call vundle#end() 
 
@@ -354,7 +358,7 @@ let g:unite_force_overwrite_statusline = 0
 let g:vimfiler_force_overwrite_statusline = 0
 let g:vimshell_force_overwrite_statusline = 0
 
-let g:gitgutter_highlight_lines = 1
+let g:gitgutter_highlight_lines = 0
 let g:gitgutter_sign_column_always = 1
 
 "------------- CleanClose ---------------
