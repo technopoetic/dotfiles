@@ -20,15 +20,13 @@ Plugin 'vim-scripts/tComment'
 Plugin 'godlygeek/tabular'
 Plugin 'majutsushi/tagbar'
 Plugin 'SirVer/ultisnips'
-Plugin 'xolox/vim-easytags'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'xolox/vim-misc'
 Plugin 'honza/vim-snippets'
 Plugin 'Konfekt/FastFold'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'Quramy/tsuquyomi'
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'mtth/scratch.vim'
 
 call vundle#end() 
 
@@ -115,8 +113,8 @@ set laststatus=2
 "Show line numbers relative to the cursor.	This is awesome.  The current line
 "number is shown in the status bar, but this shows me how many lines this
 "function covers, or how many lines that block that I want to cut is.
-" set relativenumber
-set number
+set relativenumber
+" set number
 
 "This causes Vim to save an undofile, allowing me to 'remember' undos across
 "sessions.
@@ -196,8 +194,6 @@ let java_allow_cpp_keywords=1
 " Tell vim how to look for tags files.
 set tags=./tags,tags;$HOME
 " set tags=~/code/tags
-let g:easytags_async=1
-let b:easytags_auto_highlight = 0
 
 " Use xmllint to format xml.
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
@@ -216,6 +212,9 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" Make needs real tabs, not spaces.
+autocmd FileType make setlocal noexpandtab
 
 set omnifunc=syntaxcomplete#Complete
 set completeopt-=preview
@@ -383,3 +382,6 @@ function! CleanClose(tosave)
     exe "bd".todelbufNr
 endfunction
 
+"---------- Use Ack for grep -------------------
+set grepprg=ack\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow\ $*
+set grepformat=%f:%l:%c:%m
