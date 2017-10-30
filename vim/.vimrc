@@ -39,9 +39,6 @@ let g:loaded_logipat = 1
 "Turn on syntax highlighting
 syntax on
 
-"Use ack instead of grep
-set grepprg=ack\ --nogroup
-
 "-------------- Color stuff ---------------
 set t_Co=256 
 if has('gui_running')
@@ -114,8 +111,8 @@ set laststatus=2
 "Show line numbers relative to the cursor.	This is awesome.  The current line
 "number is shown in the status bar, but this shows me how many lines this
 "function covers, or how many lines that block that I want to cut is.
-" set relativenumber
-set number
+set relativenumber
+" set number
 
 "This causes Vim to save an undofile, allowing me to 'remember' undos across
 "sessions.
@@ -193,7 +190,7 @@ let java_allow_cpp_keywords=1
 
 "--------------- Tags -----------------------
 " Tell vim how to look for tags files.
-" set tags=./tags,tags;$HOME
+set tags=./tags,tags;$HOME
 
 "----------- File Specific stuff ------------
 " Use xmllint to format xml.
@@ -218,9 +215,12 @@ let g:neocomplete#sources#syntax#min_keyword_length = 3
 " autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 " autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
-" set omnifunc=syntaxcomplete#Complete
-" set completeopt-=preview
-" set runtimepath+=~/.vim/bundle/vim-snippets
+" Make needs real tabs, not spaces.
+autocmd FileType make setlocal noexpandtab
+
+set omnifunc=syntaxcomplete#Complete
+set completeopt-=preview
+set runtimepath+=~/.vim/bundle/vim-snippets
 
 "--------------- UltiSnips ----------------------
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -377,3 +377,23 @@ endfunction
 
 "Bind F5 to clean trailing whitespace
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+"
+"---------- Use Ack for grep -------------------
+set grepprg=ack\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow\ $*
+set grepformat=%f:%l:%c:%m
+
+"---------- NetRW settings to make Lexplore behave like NerdTree ----
+" absolute width of netrw window
+let g:netrw_winsize = -28
+
+" do not display info on the top of window
+let g:netrw_banner = 0
+
+" tree-view
+let g:netrw_liststyle = 3
+
+" sort is affecting only: directories on the top, files below
+let g:netrw_sort_sequence = '[\/]$,*'
+
+" use the previous window to open file
+let g:netrw_browse_split = 4

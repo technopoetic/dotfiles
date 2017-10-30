@@ -181,3 +181,15 @@ function removek8() {
     rm -f "$HOME/.kubeenv/$1"
 }
 #<======END Kubeenv======>
+. /usr/lib/git-core/git-sh-prompt
+#Set VI mode
+set -o vi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/rhibbitts/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/home/rhibbitts/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/rhibbitts/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/home/rhibbitts/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
