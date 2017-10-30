@@ -9,7 +9,6 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'tpope/vim-fugitive'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'Yggdroot/indentLine'
@@ -20,15 +19,14 @@ Plugin 'vim-scripts/tComment'
 Plugin 'godlygeek/tabular'
 Plugin 'majutsushi/tagbar'
 Plugin 'SirVer/ultisnips'
-Plugin 'xolox/vim-easytags'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'xolox/vim-misc'
 Plugin 'honza/vim-snippets'
 Plugin 'Konfekt/FastFold'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'Quramy/tsuquyomi'
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'ngmy/vim-rubocop'
+Plugin 'mtth/scratch.vim'
 
 call vundle#end() 
 
@@ -40,6 +38,9 @@ let g:loaded_logipat = 1
 
 "Turn on syntax highlighting
 syntax on
+
+"Use ack instead of grep
+set grepprg=ack\ --nogroup
 
 "-------------- Color stuff ---------------
 set t_Co=256 
@@ -54,8 +55,6 @@ endif
 
 let g:molokai_original = 1
 colorscheme molokai
-
-
 
 "Turns off modelines
 set modelines=0
@@ -87,8 +86,8 @@ set showcmd
 
 "Wildmenu is a VimCommand completion popup.  Wildmode set the way that
 "commands are matched.
-"set wildmenu
-"set wildmode=list:longest
+set wildmenu
+set wildmode=list:longest
 
 "Don't sound the error bell.  Use a visual signal.
 set visualbell
@@ -132,10 +131,6 @@ let mapleader = ","
 "Toggle the TagBar
 nnoremap <silent> <F9> :TagbarToggle<CR>
 
-"Toggle the TagList
-" nnoremap <silent> <F8> :TlistToggle<CR>
-nnoremap <silent> <F8> :TagbarToggle<CR>
-
 "Enable 'very magic' which makes Vim regex more like python/perl.
 nnoremap / /\v
 vnoremap / /\v
@@ -154,9 +149,10 @@ set hlsearch
 nnoremap <leader><space> :noh<cr>
 
 "Set up line wrapping, handle comment formatting, add a colored line at 85px
-set wrap
 set textwidth=120
+set wrap
 set formatoptions=qrn1
+
 
 "OK, this is controversial, but turning off the arrow keys supposedly makes
 "one 'learn' Vim the right way, i.e. to use hjkl.
@@ -179,10 +175,13 @@ nnoremap ; :
 "the characters 'jj'
 inoremap jj <ESC>
 
+"Show trailing whitespace and tabs
+set listchars=tab:>-,trail:·,eol:$
+nmap <silent> <leader>s :set nolist!<CR>
+
 "------------ MarkDown ------------------
 " let g:vim_markdown_initial_foldlevel=1
 let g:vim_markdown_folding_disabled = 1
-
 
 "Treat .md files as markdown
 "au BufRead,BufNewFile *.md,*.mmd,*.markdown set filetype=markdown
@@ -194,13 +193,15 @@ let java_allow_cpp_keywords=1
 
 "--------------- Tags -----------------------
 " Tell vim how to look for tags files.
-set tags=./tags,tags;$HOME
-" set tags=~/code/tags
-let g:easytags_async=1
-let b:easytags_auto_highlight = 0
+" set tags=./tags,tags;$HOME
 
+"----------- File Specific stuff ------------
 " Use xmllint to format xml.
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+" Indentation for yaml
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+" Line length for Python
+au BufRead,BufNewFile *.py setlocal textwidth=80
 
 "----------------- NeoComplete ----------------
 let g:acp_enableAtStartup = 0
@@ -211,15 +212,15 @@ let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 
 " Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+" autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+" autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+" autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+" autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+" autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
-set omnifunc=syntaxcomplete#Complete
-set completeopt-=preview
-set runtimepath+=~/.vim/bundle/vim-snippets
+" set omnifunc=syntaxcomplete#Complete
+" set completeopt-=preview
+" set runtimepath+=~/.vim/bundle/vim-snippets
 
 "--------------- UltiSnips ----------------------
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -345,15 +346,6 @@ function! TagbarStatusFunc(current, sort, fname, ...) abort
     return lightline#statusline(0)
 endfunction
 
-augroup AutoSyntastic
-    autocmd!
-    autocmd BufWritePost *.c,*.cpp call s:syntastic()
-augroup END
-function! s:syntastic()
-    SyntasticCheck
-    call lightline#update()
-endfunction
-
 let g:unite_force_overwrite_statusline = 0
 let g:vimfiler_force_overwrite_statusline = 0
 let g:vimshell_force_overwrite_statusline = 0
@@ -383,3 +375,5 @@ function! CleanClose(tosave)
     exe "bd".todelbufNr
 endfunction
 
+"Bind F5 to clean trailing whitespace
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
