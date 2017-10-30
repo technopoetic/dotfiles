@@ -128,10 +128,10 @@ alias l='ls -CF'
 #alias ack='ack-grep'
 alias tmux='tmux -2'
 alias tiro='~/code/python/tiro/tiro.py'
-alias t='~/bin/todo.sh'
 alias gup='git fetch && git rebase -p'
 alias glg='git log --graph --pretty=format:"%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)" --abbrev-commit --date=relative'
 alias gl='git log -10 --oneline && echo'
+alias gsub='git submodule update'
 alias restart_panel='xfce4-panel --restart'
 alias mcssh='~/code/sources/sshuttle/sshuttle --dns -vvr rhibbitts@ssh.mcclatchyinteractive.com 0/0'
 
@@ -140,19 +140,58 @@ alias mcssh='~/code/sources/sshuttle/sshuttle --dns -vvr rhibbitts@ssh.mcclatchy
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # More aliases:
-alias srutl='ssh rutl014d'
-alias tmux='tmux -2'
-alias tiro='~/code/python/tiro/tiro.py'
-
+alias svst='ssh rhibbitts@vststaff.vitalbook.com'
 alias t='todo.sh -d /home/rhibbitts/.todo/config'
 
 # Ruby and Rails stuff
 alias be='bundle exec'
+alias bi='bundle install --path vendor'
 
 # VitalSource environment stuff
 alias jiffy='cd ~/code/vst/jiffy'
+alias catalogs='cd ~/code/vst/catalogs'
 alias phoenix='cd ~/code/vst/phoenix'
 alias goose='cd ~/code/vst/goose'
 alias p2='cd ~/code/vst/p2services'
 alias vst='cd ~/code/vst/vst-models'
 
+# GCP stuff
+alias gclouddev="gcloud --project=vst-main-nonprod container clusters get-credentials nonprod1-use1b && gcloud --project=vst-main-nonprod container clusters get-credentials nonprodbg1-use1b"
+alias gcloudprod="gcloud --project=vst-main-prod container clusters get-credentials prod1-use1b && gcloud --project=vst-main-prod container clusters get-credentials prodbg1-use1b"
+# Docker
+alias bs='eval $(boot2docker shellinit)'
+alias d='docker'
+alias di='docker images'
+alias dps='docker ps'
+alias dpa='docker ps -a'
+alias dcu="docker ps -a|grep Exit| awk '{print \$1}'|xargs docker rm && docker rmi \$(docker images -f "dangling=true" -q)"
+alias dr='docker run'
+#alias dockermem="for line in `docker ps | awk '{print $1}' | grep -v CONTAINER`; do docker ps | grep $line | awk '{printf $2\" \"$NF\" \"}' && cat /sys/fs/cgroup/memory/$line*/memory.usage_in_bytes | awk '{print $1/1024/1024\"MB\"}'; done | column -t"
+# Kubernetes
+alias k='kubectl'
+alias ks='kubectl --namespace=kube-system'
+alias kgp='k get po'
+alias ksgp='ks get po'
+alias kg='k get'
+alias ksg='ks get'
+alias kgr='k get po -o=custom-columns=NAME:.metadata.name,LIMITS:.spec.containers[0].resources'
+alias kl='k logs'
+alias klf='k logs -f'
+alias ksl='ks logs'
+alias kslf='ks logs -f'
+alias kd='k describe'
+alias ksd='ks describe'
+alias krm='k delete'
+alias ksrm='ks delete'
+alias ke='k exec -it'
+alias kcon="echo \"Current context: \`kubectl config current-context\`\";echo "==============================================================";k config view -o json | jq .contexts | jq .\[\].name | sed -e 's/\"//g'"
+alias kuse='k config use-context'
+alias list-kube-downloads="gsutil ls -R gs://kubernetes-release/release/v1.3.5 | sed 's|gs://kubernetes-release|https://storage.googleapis.com/kubernetes-release|; /^.*:$/d; /^$/d'"
+alias podme='k run `whoami` -i --tty --image-pull-policy=Always --rm --image alpine --restart Never --command -- ash'
+# Google Compute
+alias gcloud='gcloud'
+alias gssh='gcloud compute ssh'
+alias gcil='gcloud compute instances list'
+alias gdl='gcloud compute disks list'
+alias gcon="echo \"Current project: \`gcloud config configurations list | grep True | grep -v grep | awk '{print \$1}'\`\";echo \"==============================================================\";echo \"Available projects:\";gcloud config configurations list | awk '{print \$1}' | grep -v NAME"
+alias guse='gcloud config configurations activate'

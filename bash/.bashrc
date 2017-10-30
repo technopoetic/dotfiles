@@ -98,6 +98,86 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-. ~/bin/git-prompt.sh
+# . ~/bin/git-prompt.sh
 #Set VI mode
 set -o vi
+
+dockip() {
+  docker inspect --format '{{ .NetworkSettings.IPAddress }}' "$@"
+}
+
+# encode to base64
+function en() {
+  echo -n $1 | base64 -b0
+}
+# decode base64
+function de() {
+  echo $1 | base64 -D
+}
+
+#<=====BEGIN Kubeenv=====>
+function _kubeenv()
+{
+    local cur opts
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    opts="$(ls "$HOME/.kubeenv")"
+
+    COMPREPLY=($(compgen -W "${opts}" -- ${cur}))
+    return 0
+}
+
+complete -o default -F _kubeenv k8 removek8
+function k8() {
+    if [ x"$#" != x"1" ]; then
+        echo "Usage: k8 NAME" >&2
+        return 2
+    fi
+
+    if [ x"$KUBEENV" != x"" ]; then
+        nok8
+    fi
+
+    KUBEENV="$1"
+    export KUBEENV
+
+    mkdir -p "$HOME/.kubeenv"
+    touch "$HOME/.kubeenv/$KUBEENV"
+
+    KUBECONFIG="$HOME/.kubeenv/$KUBEENV"
+    export KUBECONFIG
+
+    if [ x"$KUBEENV_DISABLE_PROMPT" != x"1" ]; then
+        KUBEENV_PRE_PS1="$PS1"
+        PS1="($1) $PS1"
+    fi
+}
+
+function nok8() {
+    unset KUBECONFIG
+    unset KUBEENV
+
+    if [ x"$KUBEENV_DISABLE_PROMPT" != x"1" ]; then
+        PS1="$KUBEENV_PRE_PS1"
+        unset KUBEENV_PRE_PS1
+    fi
+}
+
+function removek8() {
+    if [ x"$#" != x"1" ]; then
+        echo "Usage: removek8 NAME" >&2
+        return 2
+    fi
+
+    if [ x"$KUBEENV" = x"$1" ]; then
+        echo "Can't delete active kubeenv. Run kubeenv_disable before" >&2
+        return 2
+    fi
+
+    if [ ! -e "$HOME/.kubeenv/$1" ]; then
+        echo "kubeenv $1 doesn't exist" >&2
+        return 2
+    fi
+
+    rm -f "$HOME/.kubeenv/$1"
+}
+#<======END Kubeenv======>

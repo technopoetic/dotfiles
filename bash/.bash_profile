@@ -6,7 +6,7 @@ source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 eval "$(rbenv init -)"
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/rhibbit/Downloads/google-cloud-sdk/path.bash.inc'
+if [ -f '/Users/rhibbit/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/rhibbit/Downloads/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-source '/Users/rhibbit/Downloads/google-cloud-sdk/completion.bash.inc'
+if [ -f '/Users/rhibbit/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/rhibbit/Downloads/google-cloud-sdk/completion.bash.inc'; fi
