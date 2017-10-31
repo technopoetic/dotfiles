@@ -8,7 +8,7 @@ case "$OSTYPE" in
     export MEKANIK_DB_IP='172.17.0.2:3306'
     export FLASK_APP=autoapp.py
     ;;
-  Darwin)
+  darwin*)
     source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
     eval "$(rbenv init -)"
     ;;
