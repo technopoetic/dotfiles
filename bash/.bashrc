@@ -153,4 +153,5 @@ case "$OSTYPE" in
     ;;
 esac
 
-
+eval "$(_TMUXP_COMPLETE=source tmuxp)"
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

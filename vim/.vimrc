@@ -380,7 +380,7 @@ endfunction
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 "
 "---------- Use Ack for grep -------------------
-set grepprg=ack\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow\ $*
+set grepprg=ack\ --nogroup\ --ignore-file=is:tags\ --column\ --smart-case\ --nocolor\ --follow\ $*
 set grepformat=%f:%l:%c:%m
 
 " "---------- NetRW settings to make Lexplore behave like NerdTree ----
