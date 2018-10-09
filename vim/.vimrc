@@ -1,4 +1,4 @@
-"This turns on pathogen, the Vim plugin/package manager
+"this turns on pathogen, the vim plugin/package manager
 " execute pathogen#infect()
 
 "Turns off compatibility settings for Vi
@@ -27,7 +27,9 @@ Plugin 'honza/vim-snippets'
 Plugin 'Konfekt/FastFold'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'ngmy/vim-rubocop'
-Plugin 'mtth/scratch.vim'
+Plugin 'christianrondeau/vim-base64'
+Plugin 'junegunn/fzf'
+Plugin 'Alok/notational-fzf-vim'
 
 call vundle#end() 
 
@@ -223,6 +225,9 @@ set omnifunc=syntaxcomplete#Complete
 set completeopt-=preview
 set runtimepath+=~/.vim/bundle/vim-snippets
 
+"--------------- FZF NValt ----------------------
+let g:nv_search_paths = ['~/Dropbox/Notes']
+
 "--------------- UltiSnips ----------------------
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -353,6 +358,7 @@ let g:vimshell_force_overwrite_statusline = 0
 
 let g:gitgutter_highlight_lines = 0
 let g:gitgutter_sign_column_always = 1
+let g:gitgutter_max_signs = 10000
 
 "------------- CleanClose ---------------
 noremap fc <Esc>:call CleanClose(1)

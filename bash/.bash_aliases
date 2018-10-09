@@ -135,6 +135,10 @@ alias gsub='git submodule update'
 alias restart_panel='xfce4-panel --restart'
 alias mcssh='~/code/sources/sshuttle/sshuttle --dns -vvr rhibbitts@ssh.mcclatchyinteractive.com 0/0'
 
+# Quote and unquote url encoded string:
+alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -169,25 +173,21 @@ alias dr='docker run'
 #alias dockermem="for line in `docker ps | awk '{print $1}' | grep -v CONTAINER`; do docker ps | grep $line | awk '{printf $2\" \"$NF\" \"}' && cat /sys/fs/cgroup/memory/$line*/memory.usage_in_bytes | awk '{print $1/1024/1024\"MB\"}'; done | column -t"
 # Kubernetes
 alias k='kubectl'
-alias ks='kubectl --namespace=kube-system'
 alias kgp='k get po'
-alias ksgp='ks get po'
 alias kg='k get'
-alias ksg='ks get'
 alias kgr='k get po -o=custom-columns=NAME:.metadata.name,LIMITS:.spec.containers[0].resources'
 alias kl='k logs'
 alias klf='k logs -f'
-alias ksl='ks logs'
-alias kslf='ks logs -f'
 alias kd='k describe'
-alias ksd='ks describe'
 alias krm='k delete'
-alias ksrm='ks delete'
 alias ke='k exec -it'
 alias kcon="echo \"Current context: \`kubectl config current-context\`\";echo "==============================================================";k config view -o json | jq .contexts | jq .\[\].name | sed -e 's/\"//g'"
 alias kuse='k config use-context'
-alias list-kube-downloads="gsutil ls -R gs://kubernetes-release/release/v1.3.5 | sed 's|gs://kubernetes-release|https://storage.googleapis.com/kubernetes-release|; /^.*:$/d; /^$/d'"
-alias podme='k run `whoami` -i --tty --image-pull-policy=Always --rm --image alpine --restart Never --command -- ash'
+alias knonprod='kuse gke_vst-main-nonprod_us-east1-b_nonprod1-use1b'
+alias knonprodbg='kuse gke_vst-main-nonprod_us-east1-b_nonprodbg1-use1b'
+alias kprod='kuse gke_vst-main-prod_us-east1-b_prod1-use1b'
+alias kprod2='kuse gke_vst-main-prod_us-east1-c_prod1-use1c'
+alias kprodbg='kuse gke_vst-main-prod_us-east1-b_prodbg1-use1b'
 # Google Compute
 alias gcloud='gcloud'
 alias gssh='gcloud compute ssh'
