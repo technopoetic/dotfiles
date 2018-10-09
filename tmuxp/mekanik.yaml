@@ -1,4 +1,5 @@
 session_name: Mekanik-dev
+before_script: docker start some-percona
 windows:
 - window_name: mekanik
   layout: tiled
