@@ -33,6 +33,6 @@ windows:
   shell_command_before:
     - cd ~/
   panes:
-    - echo time()
+    - echo `date`
     - shell_command:
         - mycli -h 172.17.0.2 -u root -pmy-secret-pw
