@@ -13,12 +13,6 @@ case "$OSTYPE" in
     eval "$(rbenv init -)"
     ;;
 esac
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/rhibbit/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/rhibbit/Downloads/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/rhibbit/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/rhibbit/Downloads/google-cloud-sdk/completion.bash.inc'; fi
 [[ $- == *i* ]] && source ~/.bashrc
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -26,3 +20,9 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
 fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/rhibbit/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/Users/rhibbit/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/rhibbit/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/rhibbit/Downloads/google-cloud-sdk/completion.bash.inc'; fi
