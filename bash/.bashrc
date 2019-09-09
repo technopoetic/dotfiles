@@ -147,7 +147,7 @@ case "$OSTYPE" in
     if [ -f '/home/rhibbitts/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/home/rhibbitts/Downloads/google-cloud-sdk/path.bash.inc'; fi
     if [ -f '/home/rhibbitts/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/home/rhibbitts/Downloads/google-cloud-sdk/completion.bash.inc'; fi
     ;;
-  Darwin)
+  darwin)
     if [ -f '~/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '~/Downloads/google-cloud-sdk/path.bash.inc'; fi
     if [ -f '~/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '~/Downloads/google-cloud-sdk/completion.bash.inc'; fi
     ;;
@@ -155,3 +155,4 @@ esac
 
 eval "$(_TMUXP_COMPLETE=source tmuxp)"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/git-completion.bash ] && source ~/git-completion.bash
