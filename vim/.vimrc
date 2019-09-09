@@ -1,3 +1,4 @@
+scriptencoding utf-8
 "this turns on pathogen, the vim plugin/package manager
 " execute pathogen#infect()
 
@@ -30,6 +31,7 @@ Plugin 'ngmy/vim-rubocop'
 Plugin 'christianrondeau/vim-base64'
 Plugin 'junegunn/fzf'
 Plugin 'Alok/notational-fzf-vim'
+Plugin 'ambv/black'
 
 call vundle#end() 
 
@@ -176,7 +178,7 @@ nnoremap ; :
 inoremap jj <ESC>
 
 "Show trailing whitespace and tabs
-set listchars=tab:>-,trail:·,eol:$
+set listchars=tab:→_,trail:·,eol:$
 nmap <silent> <leader>s :set nolist!<CR>
 
 "------------ MarkDown ------------------
@@ -357,7 +359,8 @@ let g:vimfiler_force_overwrite_statusline = 0
 let g:vimshell_force_overwrite_statusline = 0
 
 let g:gitgutter_highlight_lines = 0
-let g:gitgutter_sign_column_always = 1
+" let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
 let g:gitgutter_max_signs = 10000
 
 "------------- CleanClose ---------------
