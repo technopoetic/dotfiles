@@ -8,11 +8,11 @@ windows:
   panes:
     - shell_command:           # pane no. 1
         - cd code/python/mekanik          # run multiple commands in this pane
-        - source flask/bin/activate
+        - source flask3/bin/activate
         - gunicorn -b 127.0.0.1:9000 "mekanik.app:create_app()" --reload
     - shell_command:           # pane no. 1
         - cd code/python/mekanik          # run multiple commands in this pane
-        - source flask/bin/activate
+        - source flask3/bin/activate
         - python worker.py
     - shell_command:           # pane no. 1
         - cd code/javascript/mekanik_vue          # run multiple commands in this pane

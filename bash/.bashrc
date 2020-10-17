@@ -155,3 +155,17 @@ esac
 
 eval "$(_TMUXP_COMPLETE=source tmuxp)"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export PYENV_ROOT="$HOME/.pyenv"
+
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+export PATH="$HOME/.poetry/bin:$PATH"

@@ -1,9 +1,40 @@
-scriptencoding utf-8
 "this turns on pathogen, the vim plugin/package manager
 " execute pathogen#infect()
 
 "Turns off compatibility settings for Vi
 set nocompatible
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-vinegar'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'Yggdroot/indentLine'
+Plugin 'itchyny/lightline.vim'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'vim-scripts/tComment'
+Plugin 'godlygeek/tabular'
+Plugin 'majutsushi/tagbar'
+Plugin 'SirVer/ultisnips'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'fatih/vim-go'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'honza/vim-snippets'
+Plugin 'Konfekt/FastFold'
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'ngmy/vim-rubocop'
+Plugin 'christianrondeau/vim-base64'
+Plugin 'junegunn/fzf'
+Plugin 'Alok/notational-fzf-vim'
+Plugin 'nvie/vim-flake8'
+" Plugin 'ambv/black'
+
+call vundle#end() 
+
 "Allows plugins ac
 filetype plugin indent on
 
@@ -24,7 +55,8 @@ else
     set background=dark
 endif
 
-colorscheme Monokai
+let g:molokai_original = 1
+colorscheme molokai
 
 "Turns off modelines
 set modelines=0
@@ -146,7 +178,7 @@ nnoremap ; :
 inoremap jj <ESC>
 
 "Show trailing whitespace and tabs
-set listchars=tab:→_,trail:·,eol:$
+set listchars=tab:>-,trail:·,eol:$
 nmap <silent> <leader>s :set nolist!<CR>
 
 "------------ MarkDown ------------------
@@ -173,11 +205,27 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 " Line length for Python
 au BufRead,BufNewFile *.py setlocal textwidth=80
 
+"----------------- NeoComplete ----------------
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+
+" Enable omni completion.
+" autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+" autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+" autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+" autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+" autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
 " Make needs real tabs, not spaces.
 autocmd FileType make setlocal noexpandtab
 
 set omnifunc=syntaxcomplete#Complete
 set completeopt-=preview
+set runtimepath+=~/.vim/bundle/vim-snippets
 
 "--------------- FZF NValt ----------------------
 let g:nv_search_paths = ['~/Dropbox/Notes']
@@ -187,6 +235,9 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
+
+"--------------- Black ------------------------
+" let g:black_virtualenv="~/.vim_black"
 
 "--------------- LightLine --------------------
 let g:lightline = {
@@ -311,9 +362,8 @@ let g:vimfiler_force_overwrite_statusline = 0
 let g:vimshell_force_overwrite_statusline = 0
 
 let g:gitgutter_highlight_lines = 0
-" let g:gitgutter_sign_column_always = 1
-set signcolumn=yes
 let g:gitgutter_max_signs = 10000
+set signcolumn=yes
 
 "------------- CleanClose ---------------
 noremap fc <Esc>:call CleanClose(1)
